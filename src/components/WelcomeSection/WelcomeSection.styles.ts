@@ -21,16 +21,9 @@ export const ProfileImage = styled.div`
    height: 170px;
    width: 170px;
    margin-bottom: 35px;
-
+   filter: drop-shadow(-5px 7px 0px #99c3cf);
    & img {
       object-fit: cover;
       width: 100%;
    }
-`
-
-export const Navbar = styled.header`
-   display: flex;
-   justify-content: flex-end;
-   padding: 15px 10px 10px;
-   margin-bottom: 35px;
 `

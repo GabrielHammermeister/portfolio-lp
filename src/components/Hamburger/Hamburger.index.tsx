@@ -1,12 +1,12 @@
 import * as S from './Hamburger.styles'
+import MenuToggle from './MenuToggle/MenuToggle.index'
 
-const Hamburger = () => (
-   <S.Wrapper htmlFor="check">
-      <input type="checkbox" id="check" />
-      <span></span>
-      <span></span>
-      <span></span>
-   </S.Wrapper>
+interface HamburgerProps {
+   handleOnClick: () => void
+}
+
+const Hamburger = ({ handleOnClick }: HamburgerProps) => (
+   <MenuToggle handleOnClick={handleOnClick} />
 )
 
 export default Hamburger
