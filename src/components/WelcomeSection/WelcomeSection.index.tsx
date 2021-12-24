@@ -1,5 +1,4 @@
 import DefaultButton from 'components/DefaultButton/DefaultButton.index'
-import Hamburger from 'components/Hamburger/Hamburger.index'
 import * as S from './WelcomeSection.styles'
 import Image from 'next/image'
 
@@ -16,14 +15,19 @@ const WelcomeSection = () => (
                objectPosition="top"
             />
          </S.ProfileImage>
-         <h1>Hi, I’m Gabriel and I’m a Web Developer</h1>
-         <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-         </p>
+         <S.Content>
+            <h1>
+               Hi, I’m Gabriel
+               <hr />A Web Developer
+            </h1>
+            <p>
+               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+               amet sint. Velit officia consequat duis enim velit mollit.
+               Exercitation veniam consequat sunt nostrud amet.
+            </p>
 
-         <DefaultButton />
+            <DefaultButton />
+         </S.Content>
       </S.Container>
    </>
 )

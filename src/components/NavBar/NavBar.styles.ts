@@ -8,6 +8,10 @@ export const Header = styled(motion.nav)`
    justify-content: flex-end;
    margin: 15px 10px 10px;
    margin-bottom: 35px;
+
+   @media (min-width: 768px) {
+      margin-bottom: 140px;
+   }
 `
 
 export const Background = styled(motion.div)`
