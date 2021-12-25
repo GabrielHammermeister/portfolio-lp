@@ -1,7 +1,10 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
-import { GlobalStyles } from 'styles/global'
+import { ThemeProvider } from 'styled-components'
+import { FontStyles } from 'styles/Font.styles'
+import { GlobalStyles } from 'styles/Global.styles'
+import { colorTheme } from 'themes/colorTheme'
 
 function App({ Component, pageProps }: AppProps) {
    return (
@@ -11,13 +14,18 @@ function App({ Component, pageProps }: AppProps) {
             <link rel="shortcut icon" href="/img/icon-512.png" />
             <link rel="apple-touch-icon" href="/img/icon-512.png" />
             <link rel="manifest" href="/manifest.json" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+
             <meta
                name="description"
                content="A simples project for learning to work with TypeScript, React, Next Js, and more. "
             />
          </Head>
-         <GlobalStyles />
-         <Component {...pageProps} />
+         <ThemeProvider theme={colorTheme}>
+            <FontStyles />
+            <GlobalStyles />
+            <Component {...pageProps} />
+         </ThemeProvider>
       </>
    )
 }
