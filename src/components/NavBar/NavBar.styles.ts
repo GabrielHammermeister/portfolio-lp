@@ -19,14 +19,19 @@ export const Header = styled(motion.nav)`
 `
 
 export const LinkList = styled.ul`
+   display: flex;
+
    font-size: 1.2rem;
    font-weight: 500;
 
    align-items: center;
 
    list-style: none;
-   display: flex;
    gap: 30px;
+
+   @media (max-width: 900px) {
+      display: none;
+   }
 `
 
 export const Link = styled.li`
