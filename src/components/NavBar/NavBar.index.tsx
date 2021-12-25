@@ -28,7 +28,11 @@ const NavBar = () => {
    const containerRef = useRef(null)
    return (
       <S.Header initial={false} animate={isOpen ? 'open' : 'closed'}>
-         {/* <S.Background variants={sidebarVariants} /> */}
+         <S.LinkList>
+            <S.Link>Home</S.Link>
+            <S.Link>Works</S.Link>
+         </S.LinkList>
+
          <Hamburger handleOnClick={() => toggleOpen()} />
       </S.Header>
    )
