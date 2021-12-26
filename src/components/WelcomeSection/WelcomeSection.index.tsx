@@ -1,6 +1,6 @@
 import DefaultButton from 'components/DefaultButton/DefaultButton.index'
-import * as S from './WelcomeSection.styles'
 import Image from 'next/image'
+import * as S from './WelcomeSection.styles'
 
 const WelcomeSection = () => (
    <>

@@ -6,7 +6,7 @@ Object {
   "baseElement": .c0 {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   outline: none;
   border: none;
   cursor: pointer;
@@ -51,7 +51,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBQB glVgw"
+      class="sc-bdfBQB gvBofb"
     >
       <svg
         height="23"

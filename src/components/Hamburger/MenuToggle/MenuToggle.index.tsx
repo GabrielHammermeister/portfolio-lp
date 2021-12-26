@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import * as S from './MenuToggle.styles'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -16,8 +16,21 @@ interface MenuToggleProps {
    handleOnClick: () => void
 }
 
+const buttonVariants: Variants = {
+   open: {
+      zIndex: 3,
+      x: 230,
+      transition: { delay: 0.2, ease: 'easeOut', stiffness: 50 }
+   },
+   closed: {
+      zIndex: 1,
+      x: 0,
+      transition: { delay: 0.2, ease: 'easeOut', stiffness: 50 }
+   }
+}
+
 const MenuToggle = ({ handleOnClick }: MenuToggleProps) => (
-   <S.Button onClick={handleOnClick}>
+   <S.Button onClick={handleOnClick} variants={buttonVariants}>
       <svg width="23" height="23" viewBox="0 0 23 23">
          <Path
             variants={{

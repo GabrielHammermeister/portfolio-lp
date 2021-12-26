@@ -1,6 +1,7 @@
 import Hamburger from 'components/Hamburger/Hamburger.index'
 import { useCycle } from 'framer-motion'
 import * as S from './NavBar.styles'
+import NavDrawer from './NavDrawer/NavDrawer.index'
 
 // const sidebarVariants = {
 //    open: (height = 1000) => ({
@@ -31,7 +32,7 @@ const NavBar = () => {
             <S.Link>Home</S.Link>
             <S.Link>Works</S.Link>
          </S.LinkList>
-
+         <NavDrawer />
          <Hamburger handleOnClick={() => toggleOpen()} />
       </S.Header>
    )

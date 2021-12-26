@@ -1,9 +1,10 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
    position: absolute;
    top: 0;
-   right: 0;
+   left: 0;
 
    outline: none;
    border: none;
