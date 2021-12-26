@@ -4,99 +4,81 @@ exports[`<Hamburger /> should render the heading 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 35px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  border: none;
   cursor: pointer;
-  gap: 7px;
-}
-
-.c0 span {
-  background: black;
-  border-radius: 10px;
-  height: 4px;
-  -webkit-transition: 0.4s cubic-bezier(0.68,-0.6,0.32,1.6);
-  transition: 0.4s cubic-bezier(0.68,-0.6,0.32,1.6);
-}
-
-.c0 span:nth-of-type(1) {
-  width: 50%;
-}
-
-.c0 span:nth-of-type(2) {
-  width: 100%;
-}
-
-.c0 span:nth-of-type(3) {
-  width: 75%;
-}
-
-.c0 input {
-  display: none;
-}
-
-.c0 input:checked ~ span:nth-of-type(1) {
-  -webkit-transform-origin: bottom;
-  -ms-transform-origin: bottom;
-  transform-origin: bottom;
-  -webkit-transform: rotatez(45deg) translate(8px,0px);
-  -ms-transform: rotatez(45deg) translate(8px,0px);
-  transform: rotatez(45deg) translate(8px,0px);
-}
-
-.c0 input:checked ~ span:nth-of-type(2) {
-  -webkit-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-  -webkit-transform: rotatez(-45deg);
-  -ms-transform: rotatez(-45deg);
-  transform: rotatez(-45deg);
-}
-
-.c0 input:checked ~ span:nth-of-type(3) {
-  -webkit-transform-origin: bottom;
-  -ms-transform-origin: bottom;
-  transform-origin: bottom;
-  width: 50%;
-  -webkit-transform: translate(30px,-11px) rotatez(45deg);
-  -ms-transform: translate(30px,-11px) rotatez(45deg);
-  transform: translate(30px,-11px) rotatez(45deg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
 }
 
 <body>
     <div>
-      <label
+      <button
         class="c0"
-        for="check"
       >
-        <input
-          id="check"
-          type="checkbox"
-        />
-        <span />
-        <span />
-        <span />
-      </label>
+        <svg
+          height="23"
+          viewBox="0 0 23 23"
+          width="23"
+        >
+          <path
+            fill="transparent"
+            stroke="hsl(0, 0%, 18%)"
+            stroke-linecap="square"
+            stroke-width="3"
+          />
+          <path
+            d="M 2 9.423 L 20 9.423"
+            fill="transparent"
+            stroke="hsl(0, 0%, 18%)"
+            stroke-linecap="square"
+            stroke-width="3"
+          />
+          <path
+            fill="transparent"
+            stroke="hsl(0, 0%, 18%)"
+            stroke-linecap="square"
+            stroke-width="3"
+          />
+        </svg>
+      </button>
     </div>
   </body>,
   "container": <div>
-    <label
-      class="sc-bdfBQB gJvsrQ"
-      for="check"
+    <button
+      class="sc-bdfBQB glVgw"
     >
-      <input
-        id="check"
-        type="checkbox"
-      />
-      <span />
-      <span />
-      <span />
-    </label>
+      <svg
+        height="23"
+        viewBox="0 0 23 23"
+        width="23"
+      >
+        <path
+          fill="transparent"
+          stroke="hsl(0, 0%, 18%)"
+          stroke-linecap="square"
+          stroke-width="3"
+        />
+        <path
+          d="M 2 9.423 L 20 9.423"
+          fill="transparent"
+          stroke="hsl(0, 0%, 18%)"
+          stroke-linecap="square"
+          stroke-width="3"
+        />
+        <path
+          fill="transparent"
+          stroke="hsl(0, 0%, 18%)"
+          stroke-linecap="square"
+          stroke-width="3"
+        />
+      </svg>
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

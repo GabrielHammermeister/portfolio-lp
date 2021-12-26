@@ -1,4 +1,3 @@
-import * as S from './Hamburger.styles'
 import MenuToggle from './MenuToggle/MenuToggle.index'
 
 interface HamburgerProps {

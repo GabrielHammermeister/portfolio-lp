@@ -3,10 +3,8 @@ import { render, screen } from '@testing-library/react'
 
 describe('<MenuToggle />', () => {
    it('should render the heading', () => {
-      render(<MenuToggle />)
+      render(<MenuToggle handleOnClick={() => null} />)
 
-      expect(
-         screen.getByRole('heading', { name: /MenuToggle/i })
-      ).toBeInTheDocument()
+      expect(screen.getByRole('button')).toBeInTheDocument()
    })
 })

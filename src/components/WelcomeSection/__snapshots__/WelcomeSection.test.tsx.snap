@@ -14,72 +14,7 @@ Object {
   line-height: 29px;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 35px;
-  cursor: pointer;
-  gap: 7px;
-}
-
-.c1 span {
-  background: black;
-  border-radius: 10px;
-  height: 4px;
-  -webkit-transition: 0.4s cubic-bezier(0.68,-0.6,0.32,1.6);
-  transition: 0.4s cubic-bezier(0.68,-0.6,0.32,1.6);
-}
-
-.c1 span:nth-of-type(1) {
-  width: 50%;
-}
-
-.c1 span:nth-of-type(2) {
-  width: 100%;
-}
-
-.c1 span:nth-of-type(3) {
-  width: 75%;
-}
-
-.c1 input {
-  display: none;
-}
-
-.c1 input:checked ~ span:nth-of-type(1) {
-  -webkit-transform-origin: bottom;
-  -ms-transform-origin: bottom;
-  transform-origin: bottom;
-  -webkit-transform: rotatez(45deg) translate(8px,0px);
-  -ms-transform: rotatez(45deg) translate(8px,0px);
-  transform: rotatez(45deg) translate(8px,0px);
-}
-
-.c1 input:checked ~ span:nth-of-type(2) {
-  -webkit-transform-origin: top;
-  -ms-transform-origin: top;
-  transform-origin: top;
-  -webkit-transform: rotatez(-45deg);
-  -ms-transform: rotatez(-45deg);
-  transform: rotatez(-45deg);
-}
-
-.c1 input:checked ~ span:nth-of-type(3) {
-  -webkit-transform-origin: bottom;
-  -ms-transform-origin: bottom;
-  transform-origin: bottom;
-  width: 50%;
-  -webkit-transform: translate(30px,-11px) rotatez(45deg);
-  -ms-transform: translate(30px,-11px) rotatez(45deg);
-  transform: translate(30px,-11px) rotatez(45deg);
-}
-
-.c2 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -91,66 +26,95 @@ Object {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 25px;
+  gap: 35px;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c2 h1 {
   margin-bottom: 20px;
 }
 
+.c2 hr {
+  margin-bottom: 20px;
+  border: none;
+}
+
 .c2 p {
   margin-bottom: 27px;
 }
 
-.c3 {
+.c1 {
+  -webkit-flex: 0.7;
+  -ms-flex: 0.7;
+  flex: 0.7;
   overflow: hidden;
   border-radius: 50%;
-  height: 170px;
-  width: 170px;
-  margin-bottom: 35px;
+  min-width: 170px;
+  max-width: 300px;
+  -webkit-filter: drop-shadow(-5px 7px 0px #99c3cf);
+  filter: drop-shadow(-5px 7px 0px #99c3cf);
 }
 
-.c3 img {
+.c1 img {
   object-fit: cover;
   width: 100%;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  padding: 15px 10px 10px;
-  margin-bottom: 35px;
+@media (min-width:900px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width:900px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 900px;
+  }
+
+  .c2 h1 {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .c2 p {
+    margin-bottom: 47px;
+    text-align: left;
+  }
+
+  .c2 .c3 {
+    margin-right: auto;
+  }
 }
 
 <body>
     <div>
-      <header
+      <main
         class="c0"
       >
-        <label
-          class="c1"
-          for="check"
-        >
-          <input
-            id="check"
-            type="checkbox"
-          />
-          <span />
-          <span />
-          <span />
-        </label>
-      </header>
-      <main
-        class="c2"
-      >
         <div
-          class="c3"
+          class="c1"
         >
           <div
             style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -168,42 +132,32 @@ Object {
             <noscript />
           </div>
         </div>
-        <h1>
-          Hi, I am Gabriel, a Software Developer
-        </h1>
-        <p>
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-        </p>
-        <button
-          class="c4"
+        <aside
+          class="c2"
         >
-          Download Resume
-        </button>
+          <h1>
+            Hi, I’m Gabriel
+            <hr />
+            A Web Developer
+          </h1>
+          <p>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </p>
+          <button
+            class="c3 c4"
+          >
+            Download Resume
+          </button>
+        </aside>
       </main>
     </div>
   </body>,
   "container": <div>
-    <header
-      class="sc-eCstlR cSAtcL"
-    >
-      <label
-        class="sc-gsTEea fFHyuE"
-        for="check"
-      >
-        <input
-          id="check"
-          type="checkbox"
-        />
-        <span />
-        <span />
-        <span />
-      </label>
-    </header>
     <main
-      class="sc-dlfnuX fJlezN"
+      class="sc-gsTEea beyfrM"
     >
       <div
-        class="sc-hKgJUU oLNJF"
+        class="sc-hKgJUU fmvHVk"
       >
         <div
           style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -221,17 +175,23 @@ Object {
           <noscript />
         </div>
       </div>
-      <h1>
-        Hi, I am Gabriel, a Software Developer
-      </h1>
-      <p>
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-      </p>
-      <button
-        class="sc-bdfBQB gdlpc"
+      <aside
+        class="sc-dlfnuX hruwSX"
       >
-        Download Resume
-      </button>
+        <h1>
+          Hi, I’m Gabriel
+          <hr />
+          A Web Developer
+        </h1>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <button
+          class="sc-bdfBQB gdlpc"
+        >
+          Download Resume
+        </button>
+      </aside>
     </main>
   </div>,
   "debug": [Function],

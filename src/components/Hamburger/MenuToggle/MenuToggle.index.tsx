@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import * as S from './MenuToggle.styles'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Path = (props: any) => (
    <motion.path
       {...props}
