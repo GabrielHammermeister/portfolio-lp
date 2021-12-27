@@ -15,13 +15,7 @@ export const Container = styled.main`
 
 export const Content = styled.aside`
    flex: 1;
-
-   & h1 {
-      margin-bottom: 20px;
-   }
-
    & hr {
-      margin-bottom: 20px;
       border: none;
    }
 

@@ -23,9 +23,20 @@ Object {
       </button>
     </div>
   </body>,
-  "container": <div>
+  "container": .c0 {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  height: 47px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+<div>
     <button
-      class="sc-bdfBQB gdlpc"
+      class="c0"
     >
       Download Resume
     </button>

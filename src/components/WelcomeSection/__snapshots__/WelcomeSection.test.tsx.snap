@@ -3,7 +3,7 @@
 exports[`<WelcomeSection /> should render the heading 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c4 {
+  "baseElement": .c6 {
   color: white;
   border: none;
   padding: 10px 20px;
@@ -14,8 +14,20 @@ Object {
   line-height: 29px;
 }
 
-.c6 {
+.c8 {
   color: inherit;
+}
+
+.c3 {
+  font-size: 2.375rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.c4 {
+  font-size: 1.5rem;
+  line-height: 170%;
+  font-weight: 400;
 }
 
 .c0 {
@@ -39,12 +51,7 @@ Object {
   flex: 1;
 }
 
-.c2 h1 {
-  margin-bottom: 20px;
-}
-
 .c2 hr {
-  margin-bottom: 20px;
   border: none;
 }
 
@@ -69,7 +76,7 @@ Object {
   width: 100%;
 }
 
-.c3 {
+.c5 {
   font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -103,7 +110,7 @@ Object {
 }
 
 @media (max-width:900px) {
-  .c2 .c5 {
+  .c2 .c7 {
     display: none;
   }
 }
@@ -132,7 +139,7 @@ Object {
 }
 
 @media (min-width:900px) {
-  .c3 {
+  .c5 {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -167,24 +174,28 @@ Object {
         <aside
           class="c2"
         >
-          <h1>
+          <h1
+            class="c3"
+          >
             Hi, I’m Gabriel
             <hr />
             A Web Developer
           </h1>
-          <p>
+          <p
+            class="c4"
+          >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
           </p>
           <div
-            class="c3"
+            class="c5"
           >
             <button
-              class="c4"
+              class="c6"
             >
               Download Resume
             </button>
             <a
-              class="c5 c6"
+              class="c7 c8"
               href="https://github.com/GabrielHammermeister"
               target="_blank"
             >
@@ -203,7 +214,7 @@ Object {
               </svg>
             </a>
             <a
-              class="c5 c6"
+              class="c7 c8"
               href="https://www.linkedin.com/in/gabriel-hammer/"
               target="_blank"
             >
@@ -226,12 +237,156 @@ Object {
       </main>
     </div>
   </body>,
-  "container": <div>
+  "container": .c6 {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  height: 47px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.c8 {
+  color: inherit;
+}
+
+.c3 {
+  font-size: 2.375rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.c4 {
+  font-size: 1.5rem;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 hr {
+  border: none;
+}
+
+.c2 p {
+  margin-bottom: 27px;
+}
+
+.c1 {
+  -webkit-flex: 0.7;
+  -ms-flex: 0.7;
+  flex: 0.7;
+  overflow: hidden;
+  border-radius: 50%;
+  min-width: 170px;
+  max-width: 300px;
+  -webkit-filter: drop-shadow(-5px 7px 0px #99c3cf);
+  filter: drop-shadow(-5px 7px 0px #99c3cf);
+}
+
+.c1 img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.c5 {
+  font-size: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (min-width:900px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:900px) {
+  .c2 .c7 {
+    display: none;
+  }
+}
+
+@media (min-width:900px) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 900px;
+  }
+
+  .c2 h1 {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .c2 p {
+    margin-bottom: 47px;
+    text-align: left;
+  }
+}
+
+@media (min-width:900px) {
+  .c5 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+<div>
     <main
-      class="sc-dlfnuX izZSbY"
+      class="c0"
     >
       <div
-        class="sc-eCstlR igNMjd"
+        class="c1"
       >
         <div
           style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -250,26 +405,30 @@ Object {
         </div>
       </div>
       <aside
-        class="sc-hKgJUU iPEFzL"
+        class="c2"
       >
-        <h1>
+        <h1
+          class="c3"
+        >
           Hi, I’m Gabriel
           <hr />
           A Web Developer
         </h1>
-        <p>
+        <p
+          class="c4"
+        >
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </p>
         <div
-          class="sc-jSgvzq gZXKVF"
+          class="c5"
         >
           <button
-            class="sc-bdfBQB gdlpc"
+            class="c6"
           >
             Download Resume
           </button>
           <a
-            class="sc-gsTEea iICBgF"
+            class="c7 c8"
             href="https://github.com/GabrielHammermeister"
             target="_blank"
           >
@@ -288,7 +447,7 @@ Object {
             </svg>
           </a>
           <a
-            class="sc-gsTEea iICBgF"
+            class="c7 c8"
             href="https://www.linkedin.com/in/gabriel-hammer/"
             target="_blank"
           >
