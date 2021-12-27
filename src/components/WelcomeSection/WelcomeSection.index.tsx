@@ -1,5 +1,7 @@
 import DefaultButton from 'components/DefaultButton/DefaultButton.index'
+import IconLink from 'components/IconLink/IconLink.index'
 import Image from 'next/image'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import * as S from './WelcomeSection.styles'
 
 const WelcomeSection = () => (
@@ -25,8 +27,15 @@ const WelcomeSection = () => (
                amet sint. Velit officia consequat duis enim velit mollit.
                Exercitation veniam consequat sunt nostrud amet.
             </p>
-
-            <DefaultButton />
+            <S.LinksContainer>
+               <DefaultButton />
+               <IconLink href={'https://github.com/GabrielHammermeister'}>
+                  <AiFillGithub />
+               </IconLink>
+               <IconLink href={'https://www.linkedin.com/in/gabriel-hammer/'}>
+                  <AiFillLinkedin />
+               </IconLink>
+            </S.LinksContainer>
          </S.Content>
       </S.Container>
    </>

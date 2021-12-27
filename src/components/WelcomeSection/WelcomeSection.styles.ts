@@ -1,4 +1,4 @@
-import { Button } from 'components/DefaultButton/DefaultButton.styles'
+import { Link } from 'components/IconLink/IconLink.styles'
 import styled from 'styled-components'
 
 export const Container = styled.main`
@@ -29,6 +29,12 @@ export const Content = styled.aside`
       margin-bottom: 27px;
    }
 
+   @media (max-width: 900px) {
+      & ${Link} {
+         display: none;
+      }
+   }
+
    @media (min-width: 900px) {
       display: flex;
       flex-direction: column;
@@ -42,10 +48,6 @@ export const Content = styled.aside`
       & p {
          margin-bottom: 47px;
          text-align: left;
-      }
-
-      & ${Button} {
-         margin-right: auto;
       }
    }
 `
@@ -64,5 +66,17 @@ export const ProfileImage = styled.div`
    & img {
       object-fit: cover;
       width: 100%;
+   }
+`
+
+export const LinksContainer = styled.div`
+   font-size: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+
+   @media (min-width: 900px) {
+      justify-content: flex-start;
    }
 `
