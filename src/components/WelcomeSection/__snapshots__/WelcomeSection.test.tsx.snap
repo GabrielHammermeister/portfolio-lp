@@ -3,18 +3,7 @@
 exports[`<WelcomeSection /> should render the heading 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c6 {
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 2px;
-  height: 47px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29px;
-}
-
-.c8 {
+  "baseElement": .c8 {
   color: inherit;
 }
 
@@ -91,6 +80,17 @@ Object {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 30px;
+}
+
+.c6 {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  height: 47px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
 }
 
 @media (min-width:900px) {
@@ -192,7 +192,7 @@ Object {
             <button
               class="c6"
             >
-              Download Resume
+              Download CV
             </button>
             <a
               class="c7 c8"
@@ -237,18 +237,7 @@ Object {
       </main>
     </div>
   </body>,
-  "container": .c6 {
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 2px;
-  height: 47px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 29px;
-}
-
-.c8 {
+  "container": .c8 {
   color: inherit;
 }
 
@@ -325,6 +314,17 @@ Object {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 30px;
+}
+
+.c6 {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 2px;
+  height: 47px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
 }
 
 @media (min-width:900px) {
@@ -425,7 +425,7 @@ Object {
           <button
             class="c6"
           >
-            Download Resume
+            Download CV
           </button>
           <a
             class="c7 c8"

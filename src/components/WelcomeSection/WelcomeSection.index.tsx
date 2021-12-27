@@ -1,4 +1,3 @@
-import DefaultButton from 'components/DefaultButton/DefaultButton.index'
 import IconLink from 'components/IconLink/IconLink.index'
 import Typography from 'components/Typography/Typography.index'
 import Image from 'next/image'
@@ -29,7 +28,7 @@ const WelcomeSection = () => (
                Exercitation veniam consequat sunt nostrud amet.
             </Typography>
             <S.LinksContainer>
-               <DefaultButton />
+               <S.Button>Download CV</S.Button>
                <IconLink href={'https://github.com/GabrielHammermeister'}>
                   <AiFillGithub />
                </IconLink>
