@@ -1,10 +1,13 @@
+import React, { ReactNode } from 'react'
 import * as S from './IconLink.styles'
-import Link from 'next/link'
-import { Children } from 'react'
-
 type Props = {
    href: string
+   children: ReactNode
 }
 
-const IconLink = ({ href }: Props) => <Link href={href}>{Children}</Link>
+const IconLink = ({ href, children }: Props) => (
+   <S.Link href={href} target="_blank">
+      {children}
+   </S.Link>
+)
 export default IconLink

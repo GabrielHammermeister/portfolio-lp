@@ -1,4 +1,5 @@
 // import App from "next/app";
+import Footer from 'components/Footer/Footer.index'
 import NavBar from 'components/NavBar/NavBar.index'
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
@@ -29,6 +30,7 @@ function App({ Component, pageProps }: AppProps) {
             <Layout>
                <Component {...pageProps} />
             </Layout>
+            <Footer />
          </ThemeProvider>
       </>
    )
