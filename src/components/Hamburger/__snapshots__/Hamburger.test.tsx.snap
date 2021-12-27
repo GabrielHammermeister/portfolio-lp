@@ -5,7 +5,6 @@ Object {
   "asFragment": [Function],
   "baseElement": .c0 {
   position: absolute;
-  top: 0;
   left: 0;
   outline: none;
   border: none;
@@ -51,7 +50,6 @@ Object {
   </body>,
   "container": .c0 {
   position: absolute;
-  top: 0;
   left: 0;
   outline: none;
   border: none;

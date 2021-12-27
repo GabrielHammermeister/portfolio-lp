@@ -8,14 +8,14 @@ type Props = {
 
 export const Header = styled(motion.nav)`
    position: relative;
-   height: 50px;
+   height: 10vh;
    display: flex;
+   align-items: center;
    justify-content: flex-end;
-   margin: 15px 10px 10px;
-   margin-bottom: 35px;
+   margin: 0px 10px;
 
    @media (min-width: 900px) {
-      margin: 20px 50px 140px;
+      margin: 0px 50px;
       & ${Button} {
          display: none;
       }

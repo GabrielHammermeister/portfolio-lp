@@ -5,6 +5,9 @@ export const Container = styled.main`
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-top: 20vh;
+   height: 70vh;
+
    gap: 35px;
    @media (min-width: 900px) {
       flex-direction: row-reverse;
@@ -53,6 +56,7 @@ export const ProfileImage = styled.div`
    border-radius: 50%;
 
    min-width: 170px;
+   max-height: 170px;
    max-width: 300px;
 
    filter: ${({ theme }) =>
@@ -61,6 +65,9 @@ export const ProfileImage = styled.div`
    & img {
       object-fit: cover;
       width: 100%;
+   }
+   @media (min-width: 900px) {
+      max-height: none;
    }
 `
 
