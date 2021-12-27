@@ -81,7 +81,7 @@ export const Button = styled.button`
    padding: 10px 20px;
    border-radius: 2px;
    height: 47px;
-   background: ${(props) => props.theme.primary};
+   background: ${({ theme }) => theme.background.primary};
 
    font-size: 20px;
    font-weight: 500;
