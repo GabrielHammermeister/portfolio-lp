@@ -55,7 +55,8 @@ export const ProfileImage = styled.div`
    min-width: 170px;
    max-width: 300px;
 
-   filter: drop-shadow(-5px 7px 0px #99c3cf);
+   filter: ${({ theme }) =>
+      `drop-shadow(-5px 7px 0px ${theme.background.secondary})`};
 
    & img {
       object-fit: cover;
@@ -64,6 +65,7 @@ export const ProfileImage = styled.div`
 `
 
 export const LinksContainer = styled.div`
+   color: ${({ theme }) => theme.text.dark};
    font-size: 32px;
    display: flex;
    align-items: center;
@@ -76,7 +78,7 @@ export const LinksContainer = styled.div`
 `
 
 export const Button = styled.button`
-   color: white;
+   color: ${({ theme }) => theme.text.light};
    border: none;
    padding: 10px 20px;
    border-radius: 2px;

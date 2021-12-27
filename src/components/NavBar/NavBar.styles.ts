@@ -2,6 +2,10 @@ import { Button } from 'components/Hamburger/MenuToggle/MenuToggle.styles'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
+type Props = {
+   linkColor: string
+}
+
 export const Header = styled(motion.nav)`
    position: relative;
    height: 50px;
@@ -34,7 +38,7 @@ export const LinkList = styled.ul`
    }
 `
 
-export const Link = styled.li`
+export const Link = styled.li<Props>`
    &:hover {
       text-decoration: underline;
       text-decoration-thickness: 2px;

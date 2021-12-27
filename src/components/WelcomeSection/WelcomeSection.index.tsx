@@ -18,11 +18,11 @@ const WelcomeSection = () => (
             />
          </S.ProfileImage>
          <S.Content>
-            <Typography type="heading-1">
+            <Typography type="heading-1" color="dark">
                Hi, I’m Gabriel
                <hr />A Web Developer
             </Typography>
-            <Typography type="body">
+            <Typography type="body" color="dark">
                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                amet sint. Velit officia consequat duis enim velit mollit.
                Exercitation veniam consequat sunt nostrud amet.

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import { colorTheme } from 'themes/colorTheme'
 import * as S from './Typography.styles'
 
 type Props = {
@@ -11,27 +12,49 @@ type Props = {
       | 'button'
       | 'chip'
       | 'label'
+
+   color: 'primary' | 'light' | 'dark'
    children: ReactNode
 }
 
-const Typography = ({ type, children }: Props) => {
+const Typography = ({ type, children, color }: Props) => {
    switch (type) {
       case 'heading-1':
-         return <S.Heading1>{children}</S.Heading1>
+         return (
+            <S.Heading1 textColor={colorTheme.text[color]}>
+               {children}
+            </S.Heading1>
+         )
       case 'heading-2':
-         return <S.Heading2>{children}</S.Heading2>
+         return (
+            <S.Heading2 textColor={colorTheme.text[color]}>
+               {children}
+            </S.Heading2>
+         )
       case 'heading-3':
-         return <S.Heading3>{children}</S.Heading3>
+         return (
+            <S.Heading3 textColor={colorTheme.text[color]}>
+               {children}
+            </S.Heading3>
+         )
       case 'body':
-         return <S.Body>{children}</S.Body>
+         return <S.Body textColor={colorTheme.text[color]}>{children}</S.Body>
       case 'text-button':
-         return <S.TextButton>{children}</S.TextButton>
+         return (
+            <S.TextButton textColor={colorTheme.text[color]}>
+               {children}
+            </S.TextButton>
+         )
       case 'button':
-         return <S.LabelButton>{children}</S.LabelButton>
+         return (
+            <S.LabelButton textColor={colorTheme.text[color]}>
+               {children}
+            </S.LabelButton>
+         )
       case 'chip':
-         return <S.Chip>{children}</S.Chip>
+         return <S.Chip textColor={colorTheme.text[color]}>{children}</S.Chip>
       case 'label':
-         return <S.Label>{children}</S.Label>
+         return <S.Label textColor={colorTheme.text[color]}>{children}</S.Label>
       default:
          return <></>
    }

@@ -9,12 +9,14 @@ Object {
 
 .c3 {
   font-size: 2.375rem;
+  color: #000C24;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .c4 {
   font-size: 1.5rem;
+  color: #000C24;
   line-height: 170%;
   font-weight: 400;
 }
@@ -56,8 +58,8 @@ Object {
   border-radius: 50%;
   min-width: 170px;
   max-width: 300px;
-  -webkit-filter: drop-shadow(-5px 7px 0px #99c3cf);
-  filter: drop-shadow(-5px 7px 0px #99c3cf);
+  -webkit-filter: drop-shadow(-5px 7px 0px #2C363F);
+  filter: drop-shadow(-5px 7px 0px #2C363F);
 }
 
 .c1 img {
@@ -66,6 +68,7 @@ Object {
 }
 
 .c5 {
+  color: #000C24;
   font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -83,7 +86,7 @@ Object {
 }
 
 .c6 {
-  color: white;
+  color: #FBFBFB;
   border: none;
   padding: 10px 20px;
   border-radius: 2px;
@@ -244,12 +247,14 @@ Object {
 
 .c3 {
   font-size: 2.375rem;
+  color: #000C24;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .c4 {
   font-size: 1.5rem;
+  color: #000C24;
   line-height: 170%;
   font-weight: 400;
 }
@@ -291,8 +296,8 @@ Object {
   border-radius: 50%;
   min-width: 170px;
   max-width: 300px;
-  -webkit-filter: drop-shadow(-5px 7px 0px #99c3cf);
-  filter: drop-shadow(-5px 7px 0px #99c3cf);
+  -webkit-filter: drop-shadow(-5px 7px 0px #2C363F);
+  filter: drop-shadow(-5px 7px 0px #2C363F);
 }
 
 .c1 img {
@@ -301,6 +306,7 @@ Object {
 }
 
 .c5 {
+  color: #000C24;
   font-size: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -318,7 +324,7 @@ Object {
 }
 
 .c6 {
-  color: white;
+  color: #FBFBFB;
   border: none;
   padding: 10px 20px;
   border-radius: 2px;

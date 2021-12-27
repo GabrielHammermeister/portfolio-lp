@@ -6,10 +6,13 @@ import {
    AiFillInstagram,
    AiFillLinkedin
 } from 'react-icons/ai'
+import Typography from 'components/Typography/Typography.index'
 
 const Footer = () => (
    <S.FooterContainer>
-      <S.InstagramName>@ga.hmc</S.InstagramName>
+      <Typography type="heading-3" color="light">
+         @ga.hmc
+      </Typography>
 
       <S.IconList>
          <IconLink href={'https://github.com/GabrielHammermeister'}>
@@ -23,9 +26,9 @@ const Footer = () => (
          </IconLink>
       </S.IconList>
 
-      <S.Copyright>
+      <Typography type="chip" color="light">
          All Rights Reserved <AiFillCopyrightCircle /> 2022
-      </S.Copyright>
+      </Typography>
    </S.FooterContainer>
 )
 
