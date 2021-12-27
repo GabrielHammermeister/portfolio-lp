@@ -1,4 +1,5 @@
 import { Variants } from 'framer-motion'
+import Link from 'next/link'
 import * as S from './NavDrawer.styles'
 
 const navDrawerVariants: Variants = {
@@ -28,13 +29,17 @@ const NavDrawer = () => {
    return (
       <S.Container variants={navDrawerVariants}>
          <S.LinkList>
-            <span>Home</span>
-            <span>Works</span>
+            <Link href={'/'} passHref>
+               <a>Home</a>
+            </Link>
+            <Link href={'works'} passHref>
+               <a>Works</a>
+            </Link>
          </S.LinkList>
 
          <S.ContactContainer>
             <hr />
-            <span>Contact</span>
+            <a>Contact</a>
          </S.ContactContainer>
       </S.Container>
    )

@@ -1,8 +1,9 @@
+import Link from 'next/link'
+
 import Hamburger from 'components/Hamburger/Hamburger.index'
 import { useCycle } from 'framer-motion'
 import * as S from './NavBar.styles'
 import NavDrawer from './NavDrawer/NavDrawer.index'
-
 // const sidebarVariants = {
 //    open: (height = 1000) => ({
 //       clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
@@ -29,8 +30,13 @@ const NavBar = () => {
    return (
       <S.Header initial={false} animate={isOpen ? 'open' : 'closed'}>
          <S.LinkList>
-            <S.Link>Home</S.Link>
-            <S.Link>Works</S.Link>
+            <Link href={'/'} passHref>
+               <S.Link>Home</S.Link>
+            </Link>
+
+            <Link href={'/works'} passHref>
+               <S.Link>Works</S.Link>
+            </Link>
          </S.LinkList>
          <NavDrawer />
          <Hamburger handleOnClick={() => toggleOpen()} />
