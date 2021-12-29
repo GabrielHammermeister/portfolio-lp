@@ -1,4 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -57,8 +60,5 @@ export const Layout = styled.main`
    }
    @media (min-width: 900px) {
       padding: 0 100px;
-   }
-   @media (min-width: 1280px) {
-      padding: 0 250px;
    }
 `
