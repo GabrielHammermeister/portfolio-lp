@@ -1,11 +1,21 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import Spartan from '../fonts/Spartan-VariableFont_wght.ttf'
 
 export const GlobalStyles = createGlobalStyle`
+
+   @font-face {
+      font-family: 'Spartan';
+      src: local('../fonts/Spartan-VariableFont_wght.ttf'), url(${Spartan}) format('truetype');
+      font-weight: 700;
+      font-style: normal;
+   }
 
    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
+      font-family: 'Spartan'
    }
 
    html, body, #__next {
