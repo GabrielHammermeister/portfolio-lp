@@ -23,6 +23,18 @@ export const WorkThumbnail = styled.aside`
       justify-content: center;
       align-items: center;
    }
+
+   & .swiper-pagination-bullet {
+      background-color: ${({ theme }) => theme.background.secondary};
+
+      border-radius: 0;
+      width: 70px;
+      height: 5px;
+   }
+
+   & .swiper-pagination-bullet-active {
+      height: 6px;
+   }
 `
 
 export const WorkDescription = styled.aside`
