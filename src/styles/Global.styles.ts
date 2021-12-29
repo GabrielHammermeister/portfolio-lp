@@ -8,6 +8,8 @@ export const GlobalStyles = createGlobalStyle`
       src: local('../fonts/Spartan-VariableFont_wght.ttf'), url(${Spartan}) format('truetype');
       font-weight: 700;
       font-style: normal;
+      //test commit
+
    }
 
    * {
