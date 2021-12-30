@@ -40,6 +40,7 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-next {
       height: 3.125rem;
       width: 3.75rem;
+      right: 0 !important;
 
       background-color: ${({ theme }) => theme.background.secondary};
       background-image: url('/img/arrow-right.svg');
