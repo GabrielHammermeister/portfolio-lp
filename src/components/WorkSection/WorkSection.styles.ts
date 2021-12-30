@@ -24,6 +24,38 @@ export const WorkThumbnail = styled.aside`
       align-items: center;
    }
 
+   & .swiper-button-disabled {
+      display: none;
+   }
+
+   & .swiper-button-next {
+      height: 50px;
+      width: 60px;
+
+      background-color: ${({ theme }) => theme.background.secondary};
+      background-image: url('/img/arrow-right.svg');
+      background-size: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+   & .swiper-button-prev {
+      height: 50px;
+      width: 60px;
+      background-color: ${({ theme }) => theme.background.secondary};
+
+      background-image: url('/img/arrow-left.svg');
+      background-size: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+   & .swiper-button-next::after {
+      display: none;
+   }
+   & .swiper-button-prev::after {
+      display: none;
+   }
+
    & .swiper-pagination-bullet {
       background-color: ${({ theme }) => theme.background.secondary};
 
