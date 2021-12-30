@@ -1,3 +1,4 @@
+import SkillChip from 'components/SkillChip/SkillChip.index'
 import Typography from 'components/Typography/Typography.index'
 import { Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -11,11 +12,22 @@ const WorkSection = () => (
             navigation
             pagination
             slidesPerView={1}
-            onSlideChange={() => console.log('Slide changed')}
          >
-            <SwiperSlide>slide 1</SwiperSlide>
-            <SwiperSlide>slide 2</SwiperSlide>
-            <SwiperSlide>slide 3</SwiperSlide>
+            <SwiperSlide
+               style={{
+                  background: 'url("/img/fruits-thumb.jpg"), url("/img/BG.svg")'
+               }}
+            ></SwiperSlide>
+            <SwiperSlide
+               style={{
+                  background: 'url("/img/profile.jpg"), url("/img/BG.svg")'
+               }}
+            ></SwiperSlide>
+            <SwiperSlide
+               style={{
+                  background: 'url("/img/fruits-thumb.jpg"), url("/img/BG.svg")'
+               }}
+            ></SwiperSlide>
          </Swiper>
       </S.WorkThumbnail>
 
@@ -31,6 +43,16 @@ const WorkSection = () => (
             leadership, seeking to leverage solid development skills with focus
             on collaboration, communication and passion.
          </Typography>
+         <S.SkillContainer>
+            <SkillChip>HTML</SkillChip>
+            <SkillChip>CSS</SkillChip>
+            <SkillChip>JavaScript</SkillChip>
+         </S.SkillContainer>
+         {/* <S.SwiperPagination className="swiper-pagination swiper-paginatin-horizontal">
+            <span className="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+         </S.SwiperPagination> */}
       </S.WorkDescription>
    </S.Container>
 )

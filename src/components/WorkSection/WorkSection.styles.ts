@@ -16,12 +16,21 @@ export const Container = styled.main`
 export const WorkThumbnail = styled.aside`
    height: 100%;
    width: 100%;
-   min-width: 400px;
+   min-width: 40%;
 
    & .swiper-slide {
+      background-position: top 40px left 40px, top left !important;
+      background-size: cover, 150px !important;
+      background-repeat: no-repeat !important;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 87%, 0% 100%);
+
       display: flex;
       justify-content: center;
       align-items: center;
+   }
+
+   & .swiper-pagination {
+      /* display: none; */
    }
 
    & .swiper-button-disabled {
@@ -29,8 +38,8 @@ export const WorkThumbnail = styled.aside`
    }
 
    & .swiper-button-next {
-      height: 50px;
-      width: 60px;
+      height: 3.125rem;
+      width: 3.75rem;
 
       background-color: ${({ theme }) => theme.background.secondary};
       background-image: url('/img/arrow-right.svg');
@@ -39,8 +48,8 @@ export const WorkThumbnail = styled.aside`
       background-repeat: no-repeat;
    }
    & .swiper-button-prev {
-      height: 50px;
-      width: 60px;
+      height: 3.125rem;
+      width: 3.75rem;
       background-color: ${({ theme }) => theme.background.secondary};
 
       background-image: url('/img/arrow-left.svg');
@@ -55,7 +64,9 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-prev::after {
       display: none;
    }
+`
 
+export const SwiperPagination = styled.div`
    & .swiper-pagination-bullet {
       background-color: ${({ theme }) => theme.background.secondary};
 
@@ -70,13 +81,21 @@ export const WorkThumbnail = styled.aside`
 `
 
 export const WorkDescription = styled.aside`
+   min-width: 60%;
+   width: 100%;
    text-align: left;
 
    & h2 {
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
    }
 
    & h3 {
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
    }
+`
+
+export const SkillContainer = styled.div`
+   display: flex;
+   gap: 16px;
+   margin-top: 3rem;
 `
