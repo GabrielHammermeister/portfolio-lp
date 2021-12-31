@@ -6,7 +6,7 @@ import * as S from './WelcomeSection.styles'
 
 const WelcomeSection = () => (
    <>
-      <S.Container>
+      <S.Container id="welcome">
          <S.ProfileImage>
             <Image
                src="/img/profile.jpg"

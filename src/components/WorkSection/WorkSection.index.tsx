@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import * as S from './WorkSection.styles'
 
 const WorkSection = () => (
-   <S.Container>
+   <S.Container id="works">
       <S.WorkThumbnail>
          <Swiper
             modules={[Navigation, Pagination]}

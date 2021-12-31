@@ -35,7 +35,7 @@ const NavBar = () => {
                <S.Link linkColor={colorTheme.text.dark}>Home</S.Link>
             </Link>
 
-            <Link href={'/works'} passHref>
+            <Link href={'#works'} passHref>
                <S.Link linkColor={colorTheme.text.dark}>Works</S.Link>
             </Link>
          </S.LinkList>
