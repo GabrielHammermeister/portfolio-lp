@@ -94,9 +94,3 @@ export const WorkDescription = styled.aside`
       margin-bottom: 1.5rem;
    }
 `
-
-export const SkillContainer = styled.div`
-   display: flex;
-   gap: 16px;
-   margin-top: 3rem;
-`
