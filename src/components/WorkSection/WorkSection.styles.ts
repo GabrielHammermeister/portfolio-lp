@@ -67,20 +67,6 @@ export const WorkThumbnail = styled.aside`
    }
 `
 
-export const SwiperPagination = styled.div`
-   & .swiper-pagination-bullet {
-      background-color: ${({ theme }) => theme.background.secondary};
-
-      border-radius: 0;
-      width: 70px;
-      height: 5px;
-   }
-
-   & .swiper-pagination-bullet-active {
-      height: 6px;
-   }
-`
-
 export const WorkDescription = styled.aside`
    min-width: 60%;
    width: 100%;
@@ -92,5 +78,21 @@ export const WorkDescription = styled.aside`
 
    & h3 {
       margin-bottom: 1.5rem;
+   }
+
+   & .swiper-pagination {
+      width: auto;
+   }
+
+   & .swiper-pagination-bullet {
+      background-color: ${({ theme }) => theme.background.secondary};
+
+      border-radius: 0;
+      width: 70px;
+      height: 5px;
+   }
+
+   & .swiper-pagination-bullet-active {
+      height: 6px;
    }
 `

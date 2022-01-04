@@ -10,9 +10,8 @@ const WorkSection = () => {
       <S.Container id="works">
          <S.WorkThumbnail>
             <Swiper
-               modules={[Navigation, Pagination, Controller]}
+               modules={[Navigation, Controller]}
                navigation
-               pagination
                slidesPerView={1}
                controller={{ control: controlledSwiper }}
             >
@@ -37,7 +36,14 @@ const WorkSection = () => {
          </S.WorkThumbnail>
 
          <S.WorkDescription>
-            <Swiper modules={[Controller]} onSwiper={setControlledSwiper}>
+            <Swiper
+               modules={[Controller, Pagination]}
+               onSwiper={setControlledSwiper}
+               pagination={{ clickable: false }}
+               allowTouchMove={false}
+               allowSlideNext={false}
+               allowSlidePrev={false}
+            >
                <SwiperSlide>
                   <WorkDescription />
                </SwiperSlide>
