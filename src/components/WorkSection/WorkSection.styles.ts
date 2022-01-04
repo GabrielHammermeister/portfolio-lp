@@ -12,6 +12,17 @@ export const Container = styled.main`
       width: 100%;
    }
 `
+export const WorkBackground = styled.div`
+   position: absolute;
+   z-index: 1;
+   height: 100%;
+
+   background-position: top left !important;
+   background-size: 150px !important;
+   background-repeat: no-repeat !important;
+
+   background: url('/img/BG.svg');
+`
 
 export const WorkThumbnail = styled.aside`
    height: 100%;
