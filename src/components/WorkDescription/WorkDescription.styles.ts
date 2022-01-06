@@ -8,6 +8,9 @@ export const Container = styled.main`
       padding-bottom: 30px;
    }
    @media (min-width: 900px) {
+      & p {
+         font-size: 3vh;
+      }
       padding-top: 80px;
    }
 
@@ -24,7 +27,7 @@ export const Container = styled.main`
 export const SkillContainer = styled.div`
    display: none;
    gap: 16px;
-   margin-top: 3rem;
+   margin-top: 2vh;
 
    @media (min-width: 900px) {
       display: flex;

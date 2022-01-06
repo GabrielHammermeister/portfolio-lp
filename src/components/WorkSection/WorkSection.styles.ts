@@ -43,7 +43,7 @@ export const WorkDescription = styled.aside`
    width: 100%;
 
    & h2 {
-      margin-bottom: 1.875rem;
+      margin-bottom: 1rem;
    }
 
    & h3 {
@@ -145,6 +145,7 @@ export const WorkThumbnail = styled.aside`
    }
    @media (min-width: 900px) {
       max-height: 100%;
+      min-width: 40%;
       & .swiper-slide {
          background-position: top 40px left 40px !important;
       }
