@@ -21,12 +21,38 @@ export const Container = styled.main`
       justify-content: space-between;
    }
 `
+export const ProfileImage = styled.div<Props>`
+   height: 100%;
+   width: 100%;
+   min-width: 50%;
+   max-height: 55%;
+   max-width: 70%;
+   margin: 0 auto;
+
+   padding: 40px 40px 0;
+   background-image: ${({ backgroundImage, backgroundDecoration }) =>
+      `url(${backgroundImage}), url(${backgroundDecoration})`};
+   background-origin: content-box, border-box;
+   background-position: top, top left;
+   background-size: cover, 100px;
+   background-repeat: no-repeat, no-repeat;
+   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+
+   @media (min-width: 500px) {
+      background-size: cover, 120px;
+      max-height: 60%;
+   }
+   @media (min-width: 900px) {
+      background-size: cover, 150px;
+      max-height: 100%;
+      min-width: 40%;
+   }
+`
 
 export const Content = styled.aside`
    flex: 1;
-   text-align: left;
-   margin-top: 6.25rem;
-
+   text-align: center;
+   min-width: 50%;
    & h2 {
       margin-bottom: 1.4rem;
    }
@@ -42,32 +68,11 @@ export const Content = styled.aside`
    }
 
    @media (min-width: 900px) {
+      text-align: left;
+      padding-top: 6.25rem;
       display: flex;
       flex-direction: column;
       max-width: 900px;
-   }
-`
-export const ProfileImage = styled.div<Props>`
-   height: 100%;
-   width: 100%;
-   min-width: 50%;
-   max-height: 55%;
-
-   background-image: ${({ backgroundImage, backgroundDecoration }) =>
-      `url(${backgroundImage}), url(${backgroundDecoration})`};
-   background-position: top 40px left 40px, top left;
-   background-size: cover, 100px;
-   background-repeat: no-repeat, no-repeat;
-   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
-
-   @media (min-width: 500px) {
-      background-size: cover, 120px;
-      max-height: 60%;
-   }
-   @media (min-width: 900px) {
-      background-size: cover, 150px;
-      max-height: 100%;
-      min-width: 40%;
    }
 `
 

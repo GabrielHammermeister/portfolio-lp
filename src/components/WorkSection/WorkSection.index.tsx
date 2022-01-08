@@ -9,7 +9,6 @@ const WorkSection = () => {
    return (
       <S.Container id="works">
          <S.WorkThumbnail>
-            <S.BackgroundDecoration />
             <Swiper
                modules={[Navigation, Controller]}
                navigation
@@ -18,17 +17,17 @@ const WorkSection = () => {
             >
                <SwiperSlide
                   style={{
-                     background: 'url("/img/fruits-thumb.jpg")'
+                     backgroundImage: 'url("/img/profile.jpg")'
                   }}
                ></SwiperSlide>
                <SwiperSlide
                   style={{
-                     background: 'url("/img/profile.jpg")'
+                     backgroundImage: 'url("/img/profile.jpg")'
                   }}
                ></SwiperSlide>
                <SwiperSlide
                   style={{
-                     background: 'url("/img/fruits-thumb.jpg")'
+                     backgroundImage: 'url("/img/profile.jpg")'
                   }}
                ></SwiperSlide>
             </Swiper>

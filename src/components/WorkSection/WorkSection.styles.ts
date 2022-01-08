@@ -89,9 +89,22 @@ export const WorkThumbnail = styled.aside`
    width: 100%;
    min-width: 50%;
    max-height: 55%;
-   position: relative;
+   max-width: 70%;
+
+   margin: 0 auto;
+
+   & .swiper {
+      background-image: url('/img/BG.svg') !important;
+      background-position: top left !important;
+      background-repeat: no-repeat !important;
+      background-size: 100px !important;
+   }
+
    & .swiper-slide {
-      background-position: top 40px left !important;
+      padding: 40px 40px 0;
+
+      background-position: top left !important;
+      background-origin: content-box !important;
       background-size: cover !important;
       background-repeat: no-repeat !important;
       clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
@@ -108,7 +121,7 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-next {
       height: 3.125rem;
       width: 3.75rem;
-      right: 0;
+      right: 40px;
 
       background-color: ${({ theme }) => theme.background.secondary};
       background-image: url('/img/arrow-right.svg');
@@ -119,7 +132,7 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-prev {
       height: 3.125rem;
       width: 3.75rem;
-      left: 0;
+      left: 40px;
       background-color: ${({ theme }) => theme.background.secondary};
 
       background-image: url('/img/arrow-left.svg');
@@ -140,7 +153,6 @@ export const WorkThumbnail = styled.aside`
 
       & .swiper-slide {
          background-position: top 40px left;
-         clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
       }
    }
    @media (min-width: 900px) {
