@@ -1,16 +1,22 @@
 import { Link } from 'components/IconLink/IconLink.styles'
 import styled from 'styled-components'
 
+interface Props {
+   backgroundImage: string
+   backgroundDecoration: string
+}
+
 export const Container = styled.main`
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin-top: 20vh;
-   height: 70vh;
+   /* margin-top: 20vh; */
+   height: 100vh;
+   padding: 100px 0 50px;
 
-   gap: 35px;
+   gap: 55px;
    @media (min-width: 900px) {
-      flex-direction: row-reverse;
+      flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
    }
@@ -18,12 +24,15 @@ export const Container = styled.main`
 
 export const Content = styled.aside`
    flex: 1;
-   & hr {
-      border: none;
+   text-align: left;
+   margin-top: 6.25rem;
+
+   & h2 {
+      margin-bottom: 1.4rem;
    }
 
    & p {
-      margin-bottom: 27px;
+      margin-bottom: 3rem;
    }
 
    @media (max-width: 900px) {
@@ -36,38 +45,29 @@ export const Content = styled.aside`
       display: flex;
       flex-direction: column;
       max-width: 900px;
-
-      & h1 {
-         margin-bottom: 40px;
-         text-align: left;
-      }
-
-      & p {
-         margin-bottom: 47px;
-         text-align: left;
-      }
    }
 `
+export const ProfileImage = styled.div<Props>`
+   height: 100%;
+   width: 100%;
+   min-width: 50%;
+   max-height: 55%;
 
-export const ProfileImage = styled.div`
-   flex: 0.7;
+   background-image: ${({ backgroundImage, backgroundDecoration }) =>
+      `url(${backgroundImage}), url(${backgroundDecoration})`};
+   background-position: top 40px left 40px, top left;
+   background-size: cover, 100px;
+   background-repeat: no-repeat, no-repeat;
+   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 
-   overflow: hidden;
-   border-radius: 50%;
-
-   min-width: 170px;
-   max-height: 170px;
-   max-width: 300px;
-
-   filter: ${({ theme }) =>
-      `drop-shadow(-5px 7px 0px ${theme.background.secondary})`};
-
-   & img {
-      object-fit: cover;
-      width: 100%;
+   @media (min-width: 500px) {
+      background-size: cover, 120px;
+      max-height: 60%;
    }
    @media (min-width: 900px) {
-      max-height: none;
+      background-size: cover, 150px;
+      max-height: 100%;
+      min-width: 40%;
    }
 `
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.main`
    height: 100vh;
-   padding: 100px 0;
+   padding: 50px 0 100px;
 
    display: flex;
    flex-direction: column;
@@ -18,7 +18,7 @@ export const Container = styled.main`
       gap: 55px;
    }
 `
-export const WorkBackground = styled.div`
+export const BackgroundDecoration = styled.div`
    position: absolute;
    z-index: 1;
    height: 100%;

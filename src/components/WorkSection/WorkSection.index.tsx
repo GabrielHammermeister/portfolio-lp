@@ -9,7 +9,7 @@ const WorkSection = () => {
    return (
       <S.Container id="works">
          <S.WorkThumbnail>
-            <S.WorkBackground />
+            <S.BackgroundDecoration />
             <Swiper
                modules={[Navigation, Controller]}
                navigation

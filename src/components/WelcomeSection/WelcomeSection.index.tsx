@@ -1,34 +1,30 @@
 import IconLink from 'components/IconLink/IconLink.index'
 import Typography from 'components/Typography/Typography.index'
-import Image from 'next/image'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import * as S from './WelcomeSection.styles'
 
 const WelcomeSection = () => (
    <>
       <S.Container id="welcome">
-         <S.ProfileImage>
-            <Image
-               src="/img/profile.jpg"
-               alt="Imagem do autor do site"
-               height="100%"
-               width="100%"
-               layout="responsive"
-               objectPosition="top"
-            />
-         </S.ProfileImage>
+         <S.ProfileImage
+            backgroundImage="/img/BGprofile.jpg"
+            backgroundDecoration="/img/BG.svg"
+         ></S.ProfileImage>
          <S.Content>
-            <Typography type="heading-1" color="dark">
-               Hi, I’m Gabriel
-               <hr />A Web Developer
+            <Typography type="heading-2" color="primary">
+               About Me
             </Typography>
             <Typography type="body" color="dark">
-               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-               amet sint. Velit officia consequat duis enim velit mollit.
-               Exercitation veniam consequat sunt nostrud amet.
+               An inquisitive Computer Science Engineering student, skilled in
+               leadership, seeking to leverage solid development skills with
+               focus on collaboration, communication and passion.
             </Typography>
             <S.LinksContainer>
-               <S.Button>Download CV</S.Button>
+               <S.Button>
+                  <Typography type="button" color="light">
+                     Download CV
+                  </Typography>
+               </S.Button>
                <IconLink href={'https://github.com/GabrielHammermeister'}>
                   <AiFillGithub />
                </IconLink>
