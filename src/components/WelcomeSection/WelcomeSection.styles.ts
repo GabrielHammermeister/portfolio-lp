@@ -48,7 +48,7 @@ export const ProfileImage = styled.div<Props>`
    @media (min-width: 900px) {
       background-size: cover, 140px;
       max-height: 100%;
-      max-width: 50%;
+      max-width: 45%;
       min-width: 40%;
    }
 `

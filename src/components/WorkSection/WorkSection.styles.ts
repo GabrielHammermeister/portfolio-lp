@@ -149,6 +149,7 @@ export const WorkThumbnail = styled.aside`
    }
    @media (min-width: 900px) {
       max-height: 100%;
+      max-width: 45%;
       margin: none;
 
       & .swiper {
