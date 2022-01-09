@@ -26,10 +26,11 @@ export const ProfileImage = styled.div<Props>`
    width: 100%;
    min-width: 50%;
    max-height: 55%;
-   max-width: 70%;
+   max-width: 90%;
+   padding: 20px 20px 0;
+
    margin: 0 auto;
 
-   padding: 40px 40px 0;
    background-image: ${({ backgroundImage, backgroundDecoration }) =>
       `url(${backgroundImage}), url(${backgroundDecoration})`};
    background-origin: content-box, border-box;
@@ -41,10 +42,13 @@ export const ProfileImage = styled.div<Props>`
    @media (min-width: 500px) {
       background-size: cover, 120px;
       max-height: 60%;
+      max-width: 70%;
+      padding: 40px 40px 0;
    }
    @media (min-width: 900px) {
-      background-size: cover, 150px;
+      background-size: cover, 140px;
       max-height: 100%;
+      max-width: 50%;
       min-width: 40%;
    }
 `
@@ -52,13 +56,18 @@ export const ProfileImage = styled.div<Props>`
 export const Content = styled.aside`
    flex: 1;
    text-align: center;
-   min-width: 50%;
    & h2 {
       margin-bottom: 1.4rem;
    }
 
    & p {
       margin-bottom: 3rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-clamp: 4;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
    }
 
    @media (max-width: 900px) {

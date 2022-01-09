@@ -18,27 +18,6 @@ export const Container = styled.main`
       gap: 55px;
    }
 `
-export const BackgroundDecoration = styled.div`
-   position: absolute;
-   z-index: 1;
-   height: 100%;
-   width: 100%;
-
-   background-position: top left !important;
-   background-size: 100px !important;
-   background-repeat: no-repeat !important;
-
-   background: url('/img/BG.svg');
-
-   @media (min-width: 500px) {
-      background-size: 120px !important;
-      padding-top: 80px;
-   }
-   @media (min-width: 900px) {
-      background-size: 150px !important;
-      padding-top: 80px;
-   }
-`
 export const WorkDescription = styled.aside`
    width: 100%;
 
@@ -73,8 +52,8 @@ export const WorkDescription = styled.aside`
    }
    @media (min-width: 900px) {
       text-align: left;
-
       max-width: 50%;
+
       & .swiper-pagination-bullet {
          width: 100px;
       }
@@ -89,7 +68,7 @@ export const WorkThumbnail = styled.aside`
    width: 100%;
    min-width: 50%;
    max-height: 55%;
-   max-width: 70%;
+   max-width: 90%;
 
    margin: 0 auto;
 
@@ -101,7 +80,7 @@ export const WorkThumbnail = styled.aside`
    }
 
    & .swiper-slide {
-      padding: 40px 40px 0;
+      padding: 20px 20px 0;
 
       background-position: top left !important;
       background-origin: content-box !important;
@@ -121,7 +100,7 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-next {
       height: 3.125rem;
       width: 3.75rem;
-      right: 40px;
+      right: 20px;
 
       background-color: ${({ theme }) => theme.background.secondary};
       background-image: url('/img/arrow-right.svg');
@@ -132,7 +111,7 @@ export const WorkThumbnail = styled.aside`
    & .swiper-button-prev {
       height: 3.125rem;
       width: 3.75rem;
-      left: 40px;
+      left: 20px;
       background-color: ${({ theme }) => theme.background.secondary};
 
       background-image: url('/img/arrow-left.svg');
@@ -150,16 +129,34 @@ export const WorkThumbnail = styled.aside`
 
    @media (min-width: 500px) {
       max-height: 60%;
+      max-width: 70%;
+
+      & .swiper {
+         background-size: 120px !important;
+      }
 
       & .swiper-slide {
-         background-position: top 40px left;
+         padding: 40px 40px 0;
+      }
+
+      & .swiper-button-next {
+         right: 40px;
+      }
+
+      & .swiper-button-prev {
+         left: 40px;
       }
    }
    @media (min-width: 900px) {
       max-height: 100%;
-      min-width: 40%;
+      margin: none;
+
+      & .swiper {
+         background-size: 140px !important;
+      }
+
       & .swiper-slide {
-         background-position: top 40px left 40px !important;
+         background-position: top left !important;
       }
    }
 `
