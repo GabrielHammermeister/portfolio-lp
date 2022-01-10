@@ -15,6 +15,8 @@ export const Container = styled.main`
    @media (min-width: 900px) {
       flex-direction: row;
       justify-content: flex-start;
+      padding: 10vh 205px 0 150px;
+
       gap: 55px;
    }
 `

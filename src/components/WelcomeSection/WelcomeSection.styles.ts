@@ -7,18 +7,36 @@ interface Props {
 }
 
 export const Container = styled.main`
+   color: white;
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* margin-top: 20vh; */
+   /* background-image: url('/backgrosunds/large-triangles.svg'); */
    height: 100vh;
-   padding: 100px 0 50px;
-
+   padding: 10vh 50px;
    gap: 55px;
+
+   &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: red; */
+   }
+
    @media (min-width: 900px) {
       flex-direction: row;
       align-items: flex-start;
       justify-content: space-between;
+   }
+
+   @media (min-width: 500px) {
+      padding: 10vh 100px;
+   }
+   @media (min-width: 900px) {
+      padding: 10vh 150px;
    }
 `
 export const ProfileImage = styled.div<Props>`

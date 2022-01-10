@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
    }
 
    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    }
 
    p {
@@ -52,13 +52,4 @@ export const GlobalStyles = createGlobalStyle`
    }
 `
 
-export const Layout = styled.main`
-   padding: 0 15px;
-
-   @media (min-width: 500px) {
-      padding: 0 50px;
-   }
-   @media (min-width: 900px) {
-      padding: 0 100px;
-   }
-`
+export const Layout = styled.main``
