@@ -14,7 +14,7 @@ const WelcomeSection = () => (
             <Typography type="heading-2" color="primary">
                About Me
             </Typography>
-            <Typography type="body" color="light">
+            <Typography type="body" color="dark">
                An inquisitive Computer Science Engineering student, skilled in
                leadership, seeking to leverage solid development skills with
                focus on collaboration, communication and passion.

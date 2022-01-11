@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 export const Header = styled(motion.nav)`
    position: absolute;
+   z-index: 3;
    top: 0;
    left: 0;
    right: 0;

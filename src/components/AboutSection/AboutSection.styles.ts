@@ -9,8 +9,8 @@ export const Container = styled.main`
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
-      background-color: #010012;
-      clip-path: polygon(0 0, 100% 0, 100% 41%, 26% 100%, 0 100%);
+      bottom: -20%;
+      background-image: url('/backgrounds/large-triangles.svg');
+      clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%, 0 100%);
    }
 `

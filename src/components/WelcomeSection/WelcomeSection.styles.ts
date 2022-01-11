@@ -7,13 +7,14 @@ interface Props {
 }
 
 export const Container = styled.main`
+   z-index: 2;
    color: white;
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* background-image: url('/backgrosunds/large-triangles.svg'); */
    height: 100vh;
-   padding: 10vh 50px;
+   margin-bottom: 20vh;
+   padding: 0 50px;
    gap: 55px;
 
    &::before {
@@ -33,10 +34,10 @@ export const Container = styled.main`
    }
 
    @media (min-width: 500px) {
-      padding: 10vh 100px;
+      padding: 0 100px;
    }
    @media (min-width: 900px) {
-      padding: 10vh 150px;
+      padding: 0 150px;
    }
 `
 export const ProfileImage = styled.div<Props>`

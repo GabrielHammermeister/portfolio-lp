@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.main`
    height: 100vh;
    padding: 50px 0 100px;
+   margin-bottom: 20vh;
 
    display: flex;
    flex-direction: column;
@@ -15,7 +16,7 @@ export const Container = styled.main`
    @media (min-width: 900px) {
       flex-direction: row;
       justify-content: flex-start;
-      padding: 10vh 205px 0 150px;
+      padding: 0 205px 0 150px;
 
       gap: 55px;
    }
