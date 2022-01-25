@@ -123,10 +123,8 @@ export const WorkThumbnail = styled.aside`
       background-repeat: no-repeat;
    }
 
-   & .swiper-button-next::after {
-      display: none;
-   }
-   & .swiper-button-prev::after {
+   & .swiper-button-next::after,
+   .swiper-button-prev::after {
       display: none;
    }
 

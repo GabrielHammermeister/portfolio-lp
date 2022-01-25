@@ -1,11 +1,9 @@
-import Link from 'next/link'
-
-import Hamburger from 'components/Hamburger/Hamburger.index'
-import { useCycle } from 'framer-motion'
-import * as S from './NavBar.styles'
-import NavDrawer from './NavDrawer/NavDrawer.index'
-import { colorTheme } from 'themes/colorTheme'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Typography from 'components/Typography/Typography.index'
+import { useCycle } from 'framer-motion'
+import Link from 'next/link'
+import * as S from './NavBar.styles'
+
 // const sidebarVariants = {
 //    open: (height = 1000) => ({
 //       clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,

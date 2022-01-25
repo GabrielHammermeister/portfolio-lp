@@ -3,15 +3,15 @@
 exports[`<WelcomeSection /> should render the heading 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .c8 {
+  "baseElement": .c9 {
   color: inherit;
 }
 
 .c3 {
-  font-size: 2.375rem;
-  color: #000C24;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #F44336;
+  line-height: 2.875rem;
+  font-weight: 700;
 }
 
 .c4 {
@@ -21,7 +21,16 @@ Object {
   font-weight: 400;
 }
 
+.c7 {
+  font-size: 1rem;
+  color: #FBFBFB;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 .c0 {
+  z-index: 2;
+  color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -33,41 +42,57 @@ Object {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 20vh;
-  height: 70vh;
-  gap: 35px;
+  height: 100vh;
+  margin-bottom: 20vh;
+  padding: 0 50px;
+  gap: 55px;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  min-width: 50%;
+  max-height: 55%;
+  max-width: 90%;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  background-image: url(/img/BGprofile.jpg),url(/img/BG.svg);
+  background-origin: content-box,border-box;
+  background-position: top,top left;
+  background-size: cover,100px;
+  background-repeat: no-repeat,no-repeat;
+  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
 }
 
 .c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  text-align: center;
 }
 
-.c2 hr {
-  border: none;
+.c2 h2 {
+  margin-bottom: 1.4rem;
 }
 
 .c2 p {
-  margin-bottom: 27px;
-}
-
-.c1 {
-  -webkit-flex: 0.7;
-  -ms-flex: 0.7;
-  flex: 0.7;
+  margin-bottom: 3rem;
   overflow: hidden;
-  border-radius: 50%;
-  min-width: 170px;
-  max-height: 170px;
-  max-width: 300px;
-  -webkit-filter: drop-shadow(-5px 7px 0px #2C363F);
-  filter: drop-shadow(-5px 7px 0px #2C363F);
-}
-
-.c1 img {
-  object-fit: cover;
-  width: 100%;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .c5 {
@@ -102,9 +127,9 @@ Object {
 
 @media (min-width:900px) {
   .c0 {
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -116,14 +141,46 @@ Object {
   }
 }
 
+@media (min-width:500px) {
+  .c0 {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width:500px) {
+  .c1 {
+    background-size: cover,120px;
+    max-height: 60%;
+    max-width: 70%;
+    padding: 40px 40px 0;
+  }
+}
+
+@media (min-width:900px) {
+  .c1 {
+    background-size: cover,140px;
+    max-height: 100%;
+    max-width: 45%;
+    min-width: 40%;
+  }
+}
+
 @media (max-width:900px) {
-  .c2 .c7 {
+  .c2 .c8 {
     display: none;
   }
 }
 
 @media (min-width:900px) {
   .c2 {
+    text-align: left;
+    padding-top: 6.25rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -132,22 +189,6 @@ Object {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 900px;
-  }
-
-  .c2 h1 {
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-  .c2 p {
-    margin-bottom: 47px;
-    text-align: left;
-  }
-}
-
-@media (min-width:900px) {
-  .c1 {
-    max-height: none;
   }
 }
 
@@ -164,40 +205,23 @@ Object {
     <div>
       <main
         class="c0"
+        id="welcome"
       >
         <div
           class="c1"
-        >
-          <div
-            style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
-          >
-            <div
-              style="display: block; box-sizing: border-box; padding-top: 100%;"
-            />
-            <img
-              alt="Imagem do autor do site"
-              data-nimg="responsive"
-              decoding="async"
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: top;"
-            />
-            <noscript />
-          </div>
-        </div>
+        />
         <aside
           class="c2"
         >
-          <h1
+          <h2
             class="c3"
           >
-            Hi, I’m Gabriel
-            <hr />
-            A Web Developer
-          </h1>
+            About Me
+          </h2>
           <p
             class="c4"
           >
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
           </p>
           <div
             class="c5"
@@ -205,10 +229,14 @@ Object {
             <button
               class="c6"
             >
-              Download CV
+              <span
+                class="c7"
+              >
+                Download CV
+              </span>
             </button>
             <a
-              class="c7 c8"
+              class="c8 c9"
               href="https://github.com/GabrielHammermeister"
               target="_blank"
             >
@@ -227,7 +255,7 @@ Object {
               </svg>
             </a>
             <a
-              class="c7 c8"
+              class="c8 c9"
               href="https://www.linkedin.com/in/gabriel-hammer/"
               target="_blank"
             >
@@ -250,15 +278,15 @@ Object {
       </main>
     </div>
   </body>,
-  "container": .c8 {
+  "container": .c9 {
   color: inherit;
 }
 
 .c3 {
-  font-size: 2.375rem;
-  color: #000C24;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #F44336;
+  line-height: 2.875rem;
+  font-weight: 700;
 }
 
 .c4 {
@@ -268,7 +296,16 @@ Object {
   font-weight: 400;
 }
 
+.c7 {
+  font-size: 1rem;
+  color: #FBFBFB;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 .c0 {
+  z-index: 2;
+  color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -280,41 +317,57 @@ Object {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 20vh;
-  height: 70vh;
-  gap: 35px;
+  height: 100vh;
+  margin-bottom: 20vh;
+  padding: 0 50px;
+  gap: 55px;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  min-width: 50%;
+  max-height: 55%;
+  max-width: 90%;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  background-image: url(/img/BGprofile.jpg),url(/img/BG.svg);
+  background-origin: content-box,border-box;
+  background-position: top,top left;
+  background-size: cover,100px;
+  background-repeat: no-repeat,no-repeat;
+  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
 }
 
 .c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  text-align: center;
 }
 
-.c2 hr {
-  border: none;
+.c2 h2 {
+  margin-bottom: 1.4rem;
 }
 
 .c2 p {
-  margin-bottom: 27px;
-}
-
-.c1 {
-  -webkit-flex: 0.7;
-  -ms-flex: 0.7;
-  flex: 0.7;
+  margin-bottom: 3rem;
   overflow: hidden;
-  border-radius: 50%;
-  min-width: 170px;
-  max-height: 170px;
-  max-width: 300px;
-  -webkit-filter: drop-shadow(-5px 7px 0px #2C363F);
-  filter: drop-shadow(-5px 7px 0px #2C363F);
-}
-
-.c1 img {
-  object-fit: cover;
-  width: 100%;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .c5 {
@@ -349,9 +402,9 @@ Object {
 
 @media (min-width:900px) {
   .c0 {
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -363,14 +416,46 @@ Object {
   }
 }
 
+@media (min-width:500px) {
+  .c0 {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width:500px) {
+  .c1 {
+    background-size: cover,120px;
+    max-height: 60%;
+    max-width: 70%;
+    padding: 40px 40px 0;
+  }
+}
+
+@media (min-width:900px) {
+  .c1 {
+    background-size: cover,140px;
+    max-height: 100%;
+    max-width: 45%;
+    min-width: 40%;
+  }
+}
+
 @media (max-width:900px) {
-  .c2 .c7 {
+  .c2 .c8 {
     display: none;
   }
 }
 
 @media (min-width:900px) {
   .c2 {
+    text-align: left;
+    padding-top: 6.25rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -379,22 +464,6 @@ Object {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 900px;
-  }
-
-  .c2 h1 {
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-  .c2 p {
-    margin-bottom: 47px;
-    text-align: left;
-  }
-}
-
-@media (min-width:900px) {
-  .c1 {
-    max-height: none;
   }
 }
 
@@ -410,40 +479,23 @@ Object {
 <div>
     <main
       class="c0"
+      id="welcome"
     >
       <div
         class="c1"
-      >
-        <div
-          style="display: block; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
-        >
-          <div
-            style="display: block; box-sizing: border-box; padding-top: 100%;"
-          />
-          <img
-            alt="Imagem do autor do site"
-            data-nimg="responsive"
-            decoding="async"
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: top;"
-          />
-          <noscript />
-        </div>
-      </div>
+      />
       <aside
         class="c2"
       >
-        <h1
+        <h2
           class="c3"
         >
-          Hi, I’m Gabriel
-          <hr />
-          A Web Developer
-        </h1>
+          About Me
+        </h2>
         <p
           class="c4"
         >
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
         </p>
         <div
           class="c5"
@@ -451,10 +503,14 @@ Object {
           <button
             class="c6"
           >
-            Download CV
+            <span
+              class="c7"
+            >
+              Download CV
+            </span>
           </button>
           <a
-            class="c7 c8"
+            class="c8 c9"
             href="https://github.com/GabrielHammermeister"
             target="_blank"
           >
@@ -473,7 +529,7 @@ Object {
             </svg>
           </a>
           <a
-            class="c7 c8"
+            class="c8 c9"
             href="https://www.linkedin.com/in/gabriel-hammer/"
             target="_blank"
           >

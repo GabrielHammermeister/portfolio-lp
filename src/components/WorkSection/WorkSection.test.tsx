@@ -1,12 +1,16 @@
+import { render } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+import { colorTheme } from 'themes/colorTheme'
 import WorkSection from './WorkSection.index'
-import { render, screen } from '@testing-library/react'
 
 describe('<WorkSection />', () => {
    it('should render the heading', () => {
-      render(<WorkSection />)
+      const section = render(
+         <ThemeProvider theme={colorTheme}>
+            <WorkSection />
+         </ThemeProvider>
+      )
 
-      expect(
-         screen.getByRole('heading', { name: /WorkSection/i })
-      ).toBeInTheDocument()
+      expect(section).toMatchSnapshot()
    })
 })

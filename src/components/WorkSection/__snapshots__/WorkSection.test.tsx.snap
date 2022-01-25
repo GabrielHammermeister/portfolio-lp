@@ -1,0 +1,928 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WorkSection /> should render the heading 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": .c4 {
+  font-size: 2rem;
+  color: #F44336;
+  line-height: 2.875rem;
+  font-weight: 700;
+}
+
+.c5 {
+  font-size: 1.5rem;
+  color: #F44336;
+  font-weight: 500;
+}
+
+.c6 {
+  font-size: 1.5rem;
+  color: #000C24;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.c9 {
+  font-size: 14px;
+  color: #FBFBFB;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.c8 {
+  background-color: #2C363F;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.c3 {
+  padding-bottom: 30px;
+}
+
+.c3 p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: none;
+  gap: 16px;
+  margin-top: 2vh;
+}
+
+.c0 {
+  height: 100vh;
+  padding: 50px 0 100px;
+  margin-bottom: 20vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c2 h2 {
+  margin-bottom: 1rem;
+}
+
+.c2 h3 {
+  margin-bottom: 1.5rem;
+}
+
+.c2 .swiper-pagination {
+  bottom: 0;
+}
+
+.c2 .swiper-pagination-bullet {
+  background-color: #2C363F;
+  border-radius: 0;
+  width: 70px;
+  height: 5px;
+}
+
+.c2 .swiper-pagination-bullet-active {
+  height: 6px;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  min-width: 50%;
+  max-height: 55%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.c1 .swiper {
+  background-image: url('/img/BG.svg') !important;
+  background-position: top left !important;
+  background-repeat: no-repeat !important;
+  background-size: 100px !important;
+}
+
+.c1 .swiper-slide {
+  padding: 20px 20px 0;
+  background-position: top left !important;
+  background-origin: content-box !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .swiper-button-disabled {
+  display: none;
+}
+
+.c1 .swiper-button-next {
+  height: 3.125rem;
+  width: 3.75rem;
+  right: 20px;
+  background-color: #2C363F;
+  background-image: url('/img/arrow-right.svg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c1 .swiper-button-prev {
+  height: 3.125rem;
+  width: 3.75rem;
+  left: 20px;
+  background-color: #2C363F;
+  background-image: url('/img/arrow-left.svg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c1 .swiper-button-next::after,
+.c1 .swiper-button-prev::after {
+  display: none;
+}
+
+@media (min-width:500px) {
+  .c3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:900px) {
+  .c3 {
+    padding-top: 80px;
+  }
+
+  .c3 p {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width:900px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 205px 0 150px;
+    gap: 55px;
+  }
+}
+
+@media (min-width:500px) {
+  .c2 .swiper-pagination-bullet {
+    width: 80px;
+  }
+}
+
+@media (min-width:900px) {
+  .c2 {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .c2 .swiper-pagination-bullet {
+    width: 100px;
+  }
+
+  .c2 .swiper-pagination {
+    width: auto;
+  }
+}
+
+@media (min-width:500px) {
+  .c1 {
+    max-height: 60%;
+    max-width: 70%;
+  }
+
+  .c1 .swiper {
+    background-size: 120px !important;
+  }
+
+  .c1 .swiper-slide {
+    padding: 40px 40px 0;
+  }
+
+  .c1 .swiper-button-next {
+    right: 40px;
+  }
+
+  .c1 .swiper-button-prev {
+    left: 40px;
+  }
+}
+
+@media (min-width:900px) {
+  .c1 {
+    max-height: 100%;
+    max-width: 45%;
+    margin: none;
+  }
+
+  .c1 .swiper {
+    background-size: 140px !important;
+  }
+
+  .c1 .swiper-slide {
+    background-position: top left !important;
+  }
+}
+
+<body>
+    <div>
+      <main
+        class="c0"
+        id="works"
+      >
+        <aside
+          class="c1"
+        />
+        <aside
+          class="c2"
+        >
+          <main
+            class="c3"
+          >
+            <h2
+              class="c4"
+            >
+              Works
+            </h2>
+            <h3
+              class="c5"
+            >
+              Simon Game
+            </h3>
+            <p
+              class="c6"
+            >
+              An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+            </p>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  HTML
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  CSS
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  JavaScript
+                </span>
+              </div>
+            </div>
+          </main>
+          <main
+            class="c3"
+          >
+            <h2
+              class="c4"
+            >
+              Works
+            </h2>
+            <h3
+              class="c5"
+            >
+              Simon Game
+            </h3>
+            <p
+              class="c6"
+            >
+              An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+            </p>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  HTML
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  CSS
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  JavaScript
+                </span>
+              </div>
+            </div>
+          </main>
+          <main
+            class="c3"
+          >
+            <h2
+              class="c4"
+            >
+              Works
+            </h2>
+            <h3
+              class="c5"
+            >
+              Simon Game
+            </h3>
+            <p
+              class="c6"
+            >
+              An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+            </p>
+            <div
+              class="c7"
+            >
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  HTML
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  CSS
+                </span>
+              </div>
+              <div
+                class="c8"
+              >
+                <span
+                  class="c9"
+                >
+                  JavaScript
+                </span>
+              </div>
+            </div>
+          </main>
+        </aside>
+      </main>
+    </div>
+  </body>,
+  "container": .c4 {
+  font-size: 2rem;
+  color: #F44336;
+  line-height: 2.875rem;
+  font-weight: 700;
+}
+
+.c5 {
+  font-size: 1.5rem;
+  color: #F44336;
+  font-weight: 500;
+}
+
+.c6 {
+  font-size: 1.5rem;
+  color: #000C24;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.c9 {
+  font-size: 14px;
+  color: #FBFBFB;
+  line-height: 170%;
+  font-weight: 400;
+}
+
+.c8 {
+  background-color: #2C363F;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.c3 {
+  padding-bottom: 30px;
+}
+
+.c3 p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 4;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.c7 {
+  display: none;
+  gap: 16px;
+  margin-top: 2vh;
+}
+
+.c0 {
+  height: 100vh;
+  padding: 50px 0 100px;
+  margin-bottom: 20vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 .swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.c2 {
+  width: 100%;
+}
+
+.c2 h2 {
+  margin-bottom: 1rem;
+}
+
+.c2 h3 {
+  margin-bottom: 1.5rem;
+}
+
+.c2 .swiper-pagination {
+  bottom: 0;
+}
+
+.c2 .swiper-pagination-bullet {
+  background-color: #2C363F;
+  border-radius: 0;
+  width: 70px;
+  height: 5px;
+}
+
+.c2 .swiper-pagination-bullet-active {
+  height: 6px;
+}
+
+.c1 {
+  height: 100%;
+  width: 100%;
+  min-width: 50%;
+  max-height: 55%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.c1 .swiper {
+  background-image: url('/img/BG.svg') !important;
+  background-position: top left !important;
+  background-repeat: no-repeat !important;
+  background-size: 100px !important;
+}
+
+.c1 .swiper-slide {
+  padding: 20px 20px 0;
+  background-position: top left !important;
+  background-origin: content-box !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .swiper-button-disabled {
+  display: none;
+}
+
+.c1 .swiper-button-next {
+  height: 3.125rem;
+  width: 3.75rem;
+  right: 20px;
+  background-color: #2C363F;
+  background-image: url('/img/arrow-right.svg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c1 .swiper-button-prev {
+  height: 3.125rem;
+  width: 3.75rem;
+  left: 20px;
+  background-color: #2C363F;
+  background-image: url('/img/arrow-left.svg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.c1 .swiper-button-next::after,
+.c1 .swiper-button-prev::after {
+  display: none;
+}
+
+@media (min-width:500px) {
+  .c3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width:900px) {
+  .c3 {
+    padding-top: 80px;
+  }
+
+  .c3 p {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width:900px) {
+  .c7 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width:900px) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0 205px 0 150px;
+    gap: 55px;
+  }
+}
+
+@media (min-width:500px) {
+  .c2 .swiper-pagination-bullet {
+    width: 80px;
+  }
+}
+
+@media (min-width:900px) {
+  .c2 {
+    text-align: left;
+    max-width: 50%;
+  }
+
+  .c2 .swiper-pagination-bullet {
+    width: 100px;
+  }
+
+  .c2 .swiper-pagination {
+    width: auto;
+  }
+}
+
+@media (min-width:500px) {
+  .c1 {
+    max-height: 60%;
+    max-width: 70%;
+  }
+
+  .c1 .swiper {
+    background-size: 120px !important;
+  }
+
+  .c1 .swiper-slide {
+    padding: 40px 40px 0;
+  }
+
+  .c1 .swiper-button-next {
+    right: 40px;
+  }
+
+  .c1 .swiper-button-prev {
+    left: 40px;
+  }
+}
+
+@media (min-width:900px) {
+  .c1 {
+    max-height: 100%;
+    max-width: 45%;
+    margin: none;
+  }
+
+  .c1 .swiper {
+    background-size: 140px !important;
+  }
+
+  .c1 .swiper-slide {
+    background-position: top left !important;
+  }
+}
+
+<div>
+    <main
+      class="c0"
+      id="works"
+    >
+      <aside
+        class="c1"
+      />
+      <aside
+        class="c2"
+      >
+        <main
+          class="c3"
+        >
+          <h2
+            class="c4"
+          >
+            Works
+          </h2>
+          <h3
+            class="c5"
+          >
+            Simon Game
+          </h3>
+          <p
+            class="c6"
+          >
+            An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+          </p>
+          <div
+            class="c7"
+          >
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                HTML
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                CSS
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </main>
+        <main
+          class="c3"
+        >
+          <h2
+            class="c4"
+          >
+            Works
+          </h2>
+          <h3
+            class="c5"
+          >
+            Simon Game
+          </h3>
+          <p
+            class="c6"
+          >
+            An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+          </p>
+          <div
+            class="c7"
+          >
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                HTML
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                CSS
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </main>
+        <main
+          class="c3"
+        >
+          <h2
+            class="c4"
+          >
+            Works
+          </h2>
+          <h3
+            class="c5"
+          >
+            Simon Game
+          </h3>
+          <p
+            class="c6"
+          >
+            An inquisitive Computer Science Engineering student, skilled in leadership, seeking to leverage solid development skills with focus on collaboration, communication and passion.
+          </p>
+          <div
+            class="c7"
+          >
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                HTML
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                CSS
+              </span>
+            </div>
+            <div
+              class="c8"
+            >
+              <span
+                class="c9"
+              >
+                JavaScript
+              </span>
+            </div>
+          </div>
+        </main>
+      </aside>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`

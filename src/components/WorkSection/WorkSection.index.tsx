@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import WorkDescription from 'components/WorkDescription/WorkDescription.index'
 import { useState } from 'react'
 import { Navigation, Pagination, Controller } from 'swiper'
