@@ -5,7 +5,8 @@ Object {
   "asFragment": [Function],
   "baseElement": .c0 {
   position: absolute;
-  left: 0;
+  right: 20px;
+  top: 20px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -27,22 +28,22 @@ Object {
         >
           <path
             fill="transparent"
-            stroke="hsl(0, 0%, 18%)"
+            stroke="white"
             stroke-linecap="square"
-            stroke-width="3"
+            stroke-width="2"
           />
           <path
             d="M 2 9.423 L 20 9.423"
             fill="transparent"
-            stroke="hsl(0, 0%, 18%)"
+            stroke="white"
             stroke-linecap="square"
-            stroke-width="3"
+            stroke-width="2"
           />
           <path
             fill="transparent"
-            stroke="hsl(0, 0%, 18%)"
+            stroke="white"
             stroke-linecap="square"
-            stroke-width="3"
+            stroke-width="2"
           />
         </svg>
       </button>
@@ -50,7 +51,8 @@ Object {
   </body>,
   "container": .c0 {
   position: absolute;
-  left: 0;
+  right: 20px;
+  top: 20px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -71,22 +73,22 @@ Object {
       >
         <path
           fill="transparent"
-          stroke="hsl(0, 0%, 18%)"
+          stroke="white"
           stroke-linecap="square"
-          stroke-width="3"
+          stroke-width="2"
         />
         <path
           d="M 2 9.423 L 20 9.423"
           fill="transparent"
-          stroke="hsl(0, 0%, 18%)"
+          stroke="white"
           stroke-linecap="square"
-          stroke-width="3"
+          stroke-width="2"
         />
         <path
           fill="transparent"
-          stroke="hsl(0, 0%, 18%)"
+          stroke="white"
           stroke-linecap="square"
-          stroke-width="3"
+          stroke-width="2"
         />
       </svg>
     </button>

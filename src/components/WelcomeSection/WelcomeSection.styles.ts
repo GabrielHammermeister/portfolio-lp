@@ -1,4 +1,5 @@
 import { Link } from 'components/IconLink/IconLink.styles'
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 interface Props {
@@ -6,40 +7,44 @@ interface Props {
    backgroundDecoration: string
 }
 
-export const Container = styled.main`
-   z-index: 2;
-   color: white;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   height: 100vh;
-   margin-bottom: 20vh;
-   padding: 0 50px;
-   gap: 55px;
+export const Container = styled(motion.section)`
+   position: relative;
+   height: 60vh;
+   padding: 150px 20px 0;
+   background-color: ${({ theme }) => theme.text.dark};
 
-   &::before {
+   ::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      /* background-color: red; */
+      top: -50px;
+      left: -50px;
+      width: 150px;
+      height: 150px;
+      background-image: url(/svg/blob1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
    }
 
-   @media (min-width: 900px) {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
+   h1 {
+      margin-top: 50px;
+      line-height: 100%;
    }
 
-   @media (min-width: 500px) {
-      padding: 0 100px;
-   }
-   @media (min-width: 900px) {
-      padding: 0 150px;
+   h3 {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
    }
 `
+
+export const Waves = styled.div`
+   height: clamp(100px, 30vh, 300px);
+   img {
+      object-fit: cover;
+      width: 100%;
+   }
+`
+
 export const ProfileImage = styled.div<Props>`
    height: 100%;
    width: 100%;
@@ -105,12 +110,12 @@ export const Content = styled.aside`
 `
 
 export const LinksContainer = styled.div`
-   color: ${({ theme }) => theme.text.dark};
+   color: ${({ theme }) => theme.text.light};
    font-size: 32px;
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 30px;
+   gap: 1.5rem;
 
    @media (min-width: 900px) {
       justify-content: flex-start;

@@ -1,11 +1,9 @@
 // import App from "next/app";
-import Footer from 'components/Footer/Footer.index'
-import NavBar from 'components/NavBar/NavBar.index'
 import type { AppProps /*, AppContext */ } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
 import { FontStyles } from 'styles/Font.styles'
-import { GlobalStyles, Layout } from 'styles/Global.styles'
+import { GlobalStyles } from 'styles/Global.styles'
 import { colorTheme } from 'themes/colorTheme'
 
 function App({ Component, pageProps }: AppProps) {
@@ -26,11 +24,7 @@ function App({ Component, pageProps }: AppProps) {
          <ThemeProvider theme={colorTheme}>
             <FontStyles />
             <GlobalStyles />
-            <NavBar />
-            <Layout>
-               <Component {...pageProps} />
-            </Layout>
-            <Footer />
+            <Component {...pageProps} />
          </ThemeProvider>
       </>
    )

@@ -1,40 +1,66 @@
+/* eslint-disable @next/next/no-img-element */
+import Hamburger from 'components/Hamburger/Hamburger.index'
 import IconLink from 'components/IconLink/IconLink.index'
+import ProfileImage from 'components/ProfileImage/ProfileImage.index'
 import Typography from 'components/Typography/Typography.index'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+import { useCycle } from 'framer-motion'
+import {
+   AiFillGithub,
+   AiFillInstagram,
+   AiFillLinkedin,
+   AiFillTwitterCircle
+} from 'react-icons/ai'
 import * as S from './WelcomeSection.styles'
 
-const WelcomeSection = () => (
-   <>
-      <S.Container id="welcome">
-         <S.ProfileImage
-            backgroundImage="/img/BGprofile.jpg"
-            backgroundDecoration="/img/BG.svg"
-         ></S.ProfileImage>
-         <S.Content>
-            <Typography type="heading-2" color="primary">
-               About Me
+const WelcomeSection = () => {
+   const [isOpen, toggleOpen] = useCycle(false, true)
+
+   return (
+      <>
+         <S.Container animate={isOpen ? 'open' : 'closed'}>
+            <Hamburger handleOnClick={() => toggleOpen()} />
+            <ProfileImage />
+
+            <Typography color="light" type="main-title">
+               HAMMER
             </Typography>
-            <Typography type="body" color="dark">
-               An inquisitive Computer Science Engineering student, skilled in
-               leadership, seeking to leverage solid development skills with
-               focus on collaboration, communication and passion.
+            <Typography color="light" type="heading-3">
+               Engineer + Junior Front-end Developer
             </Typography>
+
             <S.LinksContainer>
-               <S.Button>
-                  <Typography type="button" color="light">
-                     Download CV
-                  </Typography>
-               </S.Button>
                <IconLink href={'https://github.com/GabrielHammermeister'}>
                   <AiFillGithub />
                </IconLink>
                <IconLink href={'https://www.linkedin.com/in/gabriel-hammer/'}>
                   <AiFillLinkedin />
                </IconLink>
+               <IconLink href={'https://www.instagram.com/ga.hmc/'}>
+                  <AiFillInstagram />
+               </IconLink>
+               <IconLink href={'https://twitter.com/Dev_GaHammer/'}>
+                  <AiFillTwitterCircle />
+               </IconLink>
             </S.LinksContainer>
-         </S.Content>
-      </S.Container>
-   </>
-)
+         </S.Container>
+         <S.Waves>
+            <picture>
+               <source
+                  media="(max-width: 768px)"
+                  srcSet="/backgrounds/waves100px.svg"
+               />
+               <source
+                  media="(min-width: 768px)"
+                  srcSet="/backgrounds/waves150px.svg"
+               />
+               <img
+                  src="/backgrounds/waves150px.svg"
+                  alt="Two waves of different tons of blue"
+               />
+            </picture>
+         </S.Waves>
+      </>
+   )
+}
 
 export default WelcomeSection

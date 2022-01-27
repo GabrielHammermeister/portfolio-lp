@@ -6,8 +6,8 @@ const Path = (props: any) => (
    <motion.path
       {...props}
       fill="transparent"
-      strokeWidth="3"
-      stroke="hsl(0, 0%, 18%)"
+      strokeWidth="2"
+      stroke="white"
       strokeLinecap="square"
    />
 )
@@ -18,13 +18,9 @@ interface MenuToggleProps {
 
 const buttonVariants: Variants = {
    open: {
-      zIndex: 3,
-      x: 230,
       transition: { delay: 0.2, ease: 'easeOut', stiffness: 50 }
    },
    closed: {
-      zIndex: 1,
-      x: 0,
       transition: { delay: 0.2, ease: 'easeOut', stiffness: 50 }
    }
 }

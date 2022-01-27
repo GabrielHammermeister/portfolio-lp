@@ -4,6 +4,13 @@ type Props = {
    textColor: string
 }
 
+export const MainTitle = styled.h1<Props>`
+   font-size: 2.375rem;
+   color: ${(props) => props.textColor};
+   font-weight: 800;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+`
 export const Heading1 = styled.h1<Props>`
    font-size: 2.375rem;
    color: ${(props) => props.textColor};

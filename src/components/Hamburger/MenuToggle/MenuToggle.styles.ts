@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 export const Button = styled(motion.button)`
    position: absolute;
-   left: 0;
-
+   right: 20px;
+   top: 20px;
    outline: none;
    border: none;
    cursor: pointer;

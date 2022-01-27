@@ -24,11 +24,6 @@ export default function (plop: NodePlopAPI) {
          },
          {
             type: 'add',
-            path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
-            templateFile: 'templates/components/stories.tsx.hbs'
-         },
-         {
-            type: 'add',
             path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
             templateFile: 'templates/components/test.tsx.hbs'
          }

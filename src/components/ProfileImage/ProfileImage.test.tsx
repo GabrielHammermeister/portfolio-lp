@@ -1,16 +1,16 @@
-import AboutSection from './AboutSection.index'
+import ProfileImage from './ProfileImage.index'
 import { render, screen } from '@testing-library/react'
 import { ThemeProvider } from 'styled-components'
 import { colorTheme } from 'themes/colorTheme'
 
-describe('<AboutSection />', () => {
-   it('should render the heading', () => {
+describe('<ProfileImage />', () => {
+   it('should render the profile picture', () => {
       render(
          <ThemeProvider theme={colorTheme}>
-            <AboutSection />
+            <ProfileImage />
          </ThemeProvider>
       )
 
-      expect(screen.getByRole('main')).toBeInTheDocument()
+      expect(screen.getByRole('img')).toBeInTheDocument()
    })
 })

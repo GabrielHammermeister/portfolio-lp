@@ -12,6 +12,7 @@ type Props = {
       | 'button'
       | 'chip'
       | 'label'
+      | 'main-title'
 
    color: 'primary' | 'light' | 'dark'
    children: ReactNode
@@ -19,6 +20,12 @@ type Props = {
 
 const Typography = ({ type, children, color }: Props) => {
    switch (type) {
+      case 'main-title':
+         return (
+            <S.MainTitle textColor={colorTheme.text[color]}>
+               {children}
+            </S.MainTitle>
+         )
       case 'heading-1':
          return (
             <S.Heading1 textColor={colorTheme.text[color]}>
