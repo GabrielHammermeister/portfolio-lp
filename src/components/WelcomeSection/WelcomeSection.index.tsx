@@ -21,27 +21,31 @@ const WelcomeSection = () => {
             <Hamburger handleOnClick={() => toggleOpen()} />
             <ProfileImage />
 
-            <Typography color="light" type="main-title">
-               HAMMER
-            </Typography>
-            <Typography color="light" type="heading-3">
-               Engineer + Junior Front-end Developer
-            </Typography>
+            <S.WelcomeMessageContainer>
+               <Typography color="light" type="main-title">
+                  HAMMER
+               </Typography>
+               <Typography color="light" type="heading-3">
+                  Engineer + Junior Front-end Developer
+               </Typography>
 
-            <S.LinksContainer>
-               <IconLink href={'https://github.com/GabrielHammermeister'}>
-                  <AiFillGithub />
-               </IconLink>
-               <IconLink href={'https://www.linkedin.com/in/gabriel-hammer/'}>
-                  <AiFillLinkedin />
-               </IconLink>
-               <IconLink href={'https://www.instagram.com/ga.hmc/'}>
-                  <AiFillInstagram />
-               </IconLink>
-               <IconLink href={'https://twitter.com/Dev_GaHammer/'}>
-                  <AiFillTwitterCircle />
-               </IconLink>
-            </S.LinksContainer>
+               <S.LinksContainer>
+                  <IconLink href={'https://github.com/GabrielHammermeister'}>
+                     <AiFillGithub />
+                  </IconLink>
+                  <IconLink
+                     href={'https://www.linkedin.com/in/gabriel-hammer/'}
+                  >
+                     <AiFillLinkedin />
+                  </IconLink>
+                  <IconLink href={'https://www.instagram.com/ga.hmc/'}>
+                     <AiFillInstagram />
+                  </IconLink>
+                  <IconLink href={'https://twitter.com/Dev_GaHammer/'}>
+                     <AiFillTwitterCircle />
+                  </IconLink>
+               </S.LinksContainer>
+            </S.WelcomeMessageContainer>
          </S.Container>
          <S.Waves>
             <picture>

@@ -15,10 +15,12 @@ export const GlobalStyles = createGlobalStyle`
 
    html, body, #__next {
       height: 100%;
+      /* font-size: 1vw; */
    }
 
    html {
-      font-size: 62.5%;
+      /* font-size: 62.5%; */
+      font-size: clamp(.7rem, 1vw, 1.3rem);
    }
 
    body {
@@ -35,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
       line-height: 3.5rem;
    }
 
-   @media(min-width: 360px) {
+   /* @media(min-width: 360px) {
       html {
          font-size: 75%;
       }
@@ -49,7 +51,7 @@ export const GlobalStyles = createGlobalStyle`
       html {
          font-size: 100%;
       }
-   }
+   } */
 `
 
 export const Layout = styled.main``
