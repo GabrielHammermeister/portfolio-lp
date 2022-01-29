@@ -77,7 +77,7 @@ export const Button = styled.button`
    border-radius: 2px;
    height: 47px;
    background: ${({ theme }) => theme.background.primary};
-
+   //change
    font-size: 20px;
    font-weight: 500;
    line-height: 29px;
