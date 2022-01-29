@@ -16,5 +16,9 @@ export const Button = styled(motion.button)`
    @media (min-width: 768px) {
       right: 3rem;
       top: 2rem;
+      & svg {
+         width: 2.5rem;
+         height: 2.5rem;
+      }
    }
 `

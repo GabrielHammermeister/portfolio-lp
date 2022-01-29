@@ -15,8 +15,8 @@ export const Container = styled(motion.section)`
       position: absolute;
       top: -50px;
       left: -50px;
-      width: 150px;
-      height: 150px;
+      width: max(30vw, 150px);
+      height: max(30vw, 150px);
       background-image: url(/svg/blob1.svg);
       background-position: center;
       background-repeat: no-repeat;
@@ -40,6 +40,13 @@ export const Container = styled(motion.section)`
          font-size: 1.5rem;
          margin-bottom: 4.375rem;
       }
+
+      ::before {
+         top: -9rem;
+         left: -9rem;
+         width: 25rem;
+         height: 25rem;
+      }
    }
 `
 
@@ -54,6 +61,7 @@ export const Waves = styled.div`
 export const WelcomeMessageContainer = styled.aside`
    @media (min-width: 768px) {
       text-align: left;
+      align-self: center;
    }
 `
 
@@ -77,7 +85,6 @@ export const Button = styled.button`
    border-radius: 2px;
    height: 47px;
    background: ${({ theme }) => theme.background.primary};
-   //change
    font-size: 20px;
    font-weight: 500;
    line-height: 29px;

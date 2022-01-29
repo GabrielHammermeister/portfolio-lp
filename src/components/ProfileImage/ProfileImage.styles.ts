@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.aside`
    position: relative;
    border: 1px solid ${({ theme }) => theme.text.light};
-   width: 16rem;
+   width: 18rem;
    align-self: center;
    justify-self: flex-start;
-   height: 22rem;
+   height: 24rem;
 
    & ::before {
       content: '';
@@ -38,7 +38,7 @@ export const Container = styled.aside`
    }
 
    @media (min-width: 768px) {
-      align-self: flex-start;
+      align-self: center;
 
       & img {
          margin-left: -30px;

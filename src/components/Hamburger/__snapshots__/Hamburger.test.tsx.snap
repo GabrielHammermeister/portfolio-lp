@@ -5,8 +5,8 @@ Object {
   "asFragment": [Function],
   "baseElement": .c0 {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 1rem;
+  top: 1rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -14,6 +14,18 @@ Object {
   height: 50px;
   border-radius: 50%;
   background: transparent;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    right: 3rem;
+    top: 2rem;
+  }
+
+  .c0 svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 <body>
@@ -51,8 +63,8 @@ Object {
   </body>,
   "container": .c0 {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 1rem;
+  top: 1rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -60,6 +72,18 @@ Object {
   height: 50px;
   border-radius: 50%;
   background: transparent;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    right: 3rem;
+    top: 2rem;
+  }
+
+  .c0 svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 <div>
