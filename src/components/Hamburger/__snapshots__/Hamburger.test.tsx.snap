@@ -7,6 +7,7 @@ Object {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  z-index: 11;
   outline: none;
   border: none;
   cursor: pointer;
@@ -16,15 +17,63 @@ Object {
   background: transparent;
 }
 
+.c2 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  margin-left: 50px;
+}
+
+.c2 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 {
+  color: inherit;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: 10;
+  right: 0.5rem;
+  top: 0.5rem;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width:768px) {
   .c0 {
-    right: 3rem;
+    right: 5rem;
     top: 2rem;
   }
 
   .c0 svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    right: 4rem;
+    top: 1rem;
   }
 }
 
@@ -42,29 +91,65 @@ Object {
             fill="transparent"
             stroke="white"
             stroke-linecap="square"
-            stroke-width="2"
+            stroke-width="1.5"
           />
           <path
             d="M 2 9.423 L 20 9.423"
             fill="transparent"
             stroke="white"
             stroke-linecap="square"
-            stroke-width="2"
+            stroke-width="1.5"
           />
           <path
             fill="transparent"
             stroke="white"
             stroke-linecap="square"
-            stroke-width="2"
+            stroke-width="1.5"
           />
         </svg>
       </button>
+      <div
+        class="c1"
+      >
+        <ul
+          class="c2"
+        >
+          <a
+            href="#About"
+          >
+            <li
+              class="c3"
+            >
+              About me
+            </li>
+          </a>
+          <a
+            href="#Portifolio"
+          >
+            <li
+              class="c3"
+            >
+              Portifolio
+            </li>
+          </a>
+          <a
+            href="#Email"
+          >
+            <li
+              class="c3"
+            >
+              Mail me
+            </li>
+          </a>
+        </ul>
+      </div>
     </div>
   </body>,
   "container": .c0 {
   position: absolute;
   right: 1rem;
   top: 1rem;
+  z-index: 11;
   outline: none;
   border: none;
   cursor: pointer;
@@ -74,15 +159,63 @@ Object {
   background: transparent;
 }
 
+.c2 {
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  margin-left: 50px;
+}
+
+.c2 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3 {
+  color: inherit;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: 10;
+  right: 0.5rem;
+  top: 0.5rem;
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 @media (min-width:768px) {
   .c0 {
-    right: 3rem;
+    right: 5rem;
     top: 2rem;
   }
 
   .c0 svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    right: 4rem;
+    top: 1rem;
   }
 }
 
@@ -99,23 +232,58 @@ Object {
           fill="transparent"
           stroke="white"
           stroke-linecap="square"
-          stroke-width="2"
+          stroke-width="1.5"
         />
         <path
           d="M 2 9.423 L 20 9.423"
           fill="transparent"
           stroke="white"
           stroke-linecap="square"
-          stroke-width="2"
+          stroke-width="1.5"
         />
         <path
           fill="transparent"
           stroke="white"
           stroke-linecap="square"
-          stroke-width="2"
+          stroke-width="1.5"
         />
       </svg>
     </button>
+    <div
+      class="c1"
+    >
+      <ul
+        class="c2"
+      >
+        <a
+          href="#About"
+        >
+          <li
+            class="c3"
+          >
+            About me
+          </li>
+        </a>
+        <a
+          href="#Portifolio"
+        >
+          <li
+            class="c3"
+          >
+            Portifolio
+          </li>
+        </a>
+        <a
+          href="#Email"
+        >
+          <li
+            class="c3"
+          >
+            Mail me
+          </li>
+        </a>
+      </ul>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

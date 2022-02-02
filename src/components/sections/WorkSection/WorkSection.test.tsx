@@ -1,17 +1,16 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { render } from '@testing-library/react'
 import { ThemeProvider } from 'styled-components'
 import { colorTheme } from 'themes/colorTheme'
-import Hamburger from './Hamburger.index'
+import WorkSection from './WorkSection.index'
 
-describe('<Hamburger />', () => {
+describe('<WorkSection />', () => {
    it('should render the heading', () => {
-      const layout = render(
+      const container = render(
          <ThemeProvider theme={colorTheme}>
-            <Hamburger handleOnClick={() => {}} />
+            <WorkSection />
          </ThemeProvider>
       )
 
-      expect(layout).toMatchSnapshot()
+      expect(container).toMatchSnapshot()
    })
 })

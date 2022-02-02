@@ -11,8 +11,8 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
     "generate": "yarn plop --plopfile ./generators/plopfile.ts",
-    "test": "jest --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
+    "test": "jest --maxWorkers=50% --silent",
+    "test:watch": "jest --watch --maxWorkers=25% --silent",
     "test:ci": "jest --runInBand"
   },
   "lint-staged": {

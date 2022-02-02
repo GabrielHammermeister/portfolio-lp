@@ -1,7 +1,7 @@
-import AboutSection from 'components/AboutSection/AboutSection.index'
 import Footer from 'components/Footer/Footer.index'
-import WelcomeSection from 'components/WelcomeSection/WelcomeSection.index'
-import WorkSection from 'components/WorkSection/WorkSection.index'
+import AboutSection from 'components/sections/AboutSection/AboutSection.index'
+import WelcomeSection from 'components/sections/WelcomeSection/WelcomeSection.index'
+import WorkSection from 'components/sections/WorkSection/WorkSection.index'
 
 export default function Home() {
    return (

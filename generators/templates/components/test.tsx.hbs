@@ -2,11 +2,9 @@ import {{pascalCase name}} from './{{pascalCase name}}.index'
 import { render, screen } from '@testing-library/react'
 
 describe('<{{pascalCase name}} />', () => {
-   it('should render the heading', () => {
-      render(<{{pascalCase name}} />)
+   it('should render {{pascalCase name}}', () => {
+      const container = render(<{{pascalCase name}} />)
 
-      expect(
-         screen.getByRole('heading', { name: /{{pascalCase name}}/i })
-      ).toBeInTheDocument()
+      expect(container).toMatchSnapshot()
    })
 })

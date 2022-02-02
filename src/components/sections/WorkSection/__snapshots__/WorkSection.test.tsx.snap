@@ -168,7 +168,10 @@ Object {
   background-repeat: no-repeat;
 }
 
-.c1 .swiper-button-next::after,
+.c1 .swiper-button-next::after {
+  display: none;
+}
+
 .c1 .swiper-button-prev::after {
   display: none;
 }
@@ -277,7 +280,7 @@ Object {
     <div>
       <main
         class="c0"
-        id="Portifolio"
+        id="works"
       >
         <aside
           class="c1"
@@ -604,7 +607,10 @@ Object {
   background-repeat: no-repeat;
 }
 
-.c1 .swiper-button-next::after,
+.c1 .swiper-button-next::after {
+  display: none;
+}
+
 .c1 .swiper-button-prev::after {
   display: none;
 }
@@ -712,7 +718,7 @@ Object {
 <div>
     <main
       class="c0"
-      id="Portifolio"
+      id="works"
     >
       <aside
         class="c1"
