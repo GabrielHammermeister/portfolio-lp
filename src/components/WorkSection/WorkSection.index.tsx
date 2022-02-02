@@ -8,7 +8,7 @@ import * as S from './WorkSection.styles'
 const WorkSection = () => {
    const [controlledSwiper, setControlledSwiper] = useState<any>(null)
    return (
-      <S.Container id="works">
+      <S.Container id="Portifolio">
          <S.WorkThumbnail>
             <Swiper
                modules={[Navigation, Controller]}

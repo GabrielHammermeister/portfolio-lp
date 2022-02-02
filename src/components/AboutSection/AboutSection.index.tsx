@@ -5,7 +5,7 @@ import * as S from './AboutSection.styles'
 
 const AboutSection = () => {
    return (
-      <S.Container>
+      <S.Container id="About">
          <S.ProfileImage
             backgroundImage="/img/BGprofile.jpg"
             backgroundDecoration="/img/BG.svg"
