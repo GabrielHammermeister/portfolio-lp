@@ -10,7 +10,7 @@ export const AboutSection = () => {
             <S.Illustration src="/illustrations/blogging.svg" />
             <S.Content>
                <Typography type="heading-2" color="primary">
-                  About Me
+                  About Me test
                </Typography>
                <Typography type="body" color="dark">
                   An inquisitive Computer Science Engineering student, skilled
