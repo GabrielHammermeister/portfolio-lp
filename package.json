@@ -21,6 +21,11 @@
       "yarn lint --fix"
     ]
   },
+  "husky": {
+     "hooks": {
+        "pre-push": "npx --no-install lint-staged"
+     }
+  },
   "dependencies": {
     "@types/react-icons": "^3.0.0",
     "@types/swiper": "^5.4.3",
