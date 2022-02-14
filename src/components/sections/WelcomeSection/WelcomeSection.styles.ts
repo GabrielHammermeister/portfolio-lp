@@ -1,118 +1,79 @@
-import { Link } from 'components/IconLink/IconLink.styles'
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-interface Props {
-   backgroundImage: string
-   backgroundDecoration: string
-}
-
-export const Container = styled.main`
-   z-index: 2;
-   color: white;
+export const Container = styled(motion.section)`
+   position: relative;
    display: flex;
    flex-direction: column;
-   align-items: center;
-   height: 100vh;
-   margin-bottom: 20vh;
-   padding: 0 50px;
-   gap: 55px;
+   justify-content: space-around;
+   height: 70vh;
+   padding: 150px 20px 0;
+   background-color: ${({ theme }) => theme.text.dark};
 
-   &::before {
+   ::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      /* background-color: red; */
+      top: -50px;
+      left: -50px;
+      width: max(30vw, 150px);
+      height: max(30vw, 150px);
+      background-image: url(/svg/blob1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
    }
 
-   @media (min-width: 900px) {
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
+   h1 {
+      margin-top: 50px;
+      line-height: 100%;
    }
 
-   @media (min-width: 500px) {
-      padding: 0 100px;
-   }
-   @media (min-width: 900px) {
-      padding: 0 150px;
-   }
-`
-export const ProfileImage = styled.div<Props>`
-   height: 100%;
-   width: 100%;
-   min-width: 50%;
-   max-height: 55%;
-   max-width: 90%;
-   padding: 20px 20px 0;
-
-   margin: 0 auto;
-
-   background-image: ${({ backgroundImage, backgroundDecoration }) =>
-      `url(${backgroundImage}), url(${backgroundDecoration})`};
-   background-origin: content-box, border-box;
-   background-position: top, top left;
-   background-size: cover, 100px;
-   background-repeat: no-repeat, no-repeat;
-   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
-
-   @media (min-width: 500px) {
-      background-size: cover, 120px;
-      max-height: 60%;
-      max-width: 70%;
-      padding: 40px 40px 0;
-   }
-   @media (min-width: 900px) {
-      background-size: cover, 140px;
-      max-height: 100%;
-      max-width: 45%;
-      min-width: 40%;
-   }
-`
-
-export const Content = styled.aside`
-   flex: 1;
-   text-align: center;
-   & h2 {
-      margin-bottom: 1.4rem;
+   h3 {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
    }
 
-   & p {
-      margin-bottom: 3rem;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-clamp: 4;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-   }
+   @media (min-width: 768px) {
+      flex-direction: row-reverse;
+      padding: 150px 60px 0;
+      h3 {
+         font-size: 1.5rem;
+         margin-bottom: 4.375rem;
+      }
 
-   @media (max-width: 900px) {
-      & ${Link} {
-         display: none;
+      ::before {
+         top: -9rem;
+         left: -9rem;
+         width: 25rem;
+         height: 25rem;
       }
    }
+`
 
-   @media (min-width: 900px) {
+export const Waves = styled.div`
+   height: clamp(100px, 30vh, 300px);
+   img {
+      object-fit: cover;
+      width: 100%;
+   }
+`
+
+export const WelcomeMessageContainer = styled.aside`
+   @media (min-width: 768px) {
       text-align: left;
-      padding-top: 6.25rem;
-      display: flex;
-      flex-direction: column;
-      max-width: 900px;
+      align-self: center;
    }
 `
 
 export const LinksContainer = styled.div`
-   color: ${({ theme }) => theme.text.dark};
+   color: ${({ theme }) => theme.text.light};
    font-size: 32px;
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 30px;
+   gap: 1.5rem;
 
-   @media (min-width: 900px) {
+   @media (min-width: 768px) {
       justify-content: flex-start;
    }
 `
@@ -124,7 +85,6 @@ export const Button = styled.button`
    border-radius: 2px;
    height: 47px;
    background: ${({ theme }) => theme.background.primary};
-
    font-size: 20px;
    font-weight: 500;
    line-height: 29px;

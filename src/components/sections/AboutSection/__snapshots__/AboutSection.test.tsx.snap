@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<WelcomeSection /> should render the heading 1`] = `
+exports[`<AboutSection /> should render the heading 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": .c9 {
@@ -48,30 +48,9 @@ Object {
   gap: 55px;
 }
 
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .c1 {
-  height: 100%;
-  width: 100%;
-  min-width: 50%;
-  max-height: 55%;
-  max-width: 90%;
-  padding: 20px 20px 0;
-  margin: 0 auto;
-  background-image: url(/img/BGprofile.jpg),url(/img/BG.svg);
-  background-origin: content-box,border-box;
-  background-position: top,top left;
-  background-size: cover,100px;
-  background-repeat: no-repeat,no-repeat;
-  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
-  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  width: clamp(300px,50%,800px);
+  padding-top: 6rem;
 }
 
 .c2 {
@@ -127,9 +106,9 @@ Object {
 
 @media (min-width:900px) {
   .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -150,24 +129,6 @@ Object {
 @media (min-width:900px) {
   .c0 {
     padding: 0 150px;
-  }
-}
-
-@media (min-width:500px) {
-  .c1 {
-    background-size: cover,120px;
-    max-height: 60%;
-    max-width: 70%;
-    padding: 40px 40px 0;
-  }
-}
-
-@media (min-width:900px) {
-  .c1 {
-    background-size: cover,140px;
-    max-height: 100%;
-    max-width: 45%;
-    min-width: 40%;
   }
 }
 
@@ -205,10 +166,11 @@ Object {
     <div>
       <main
         class="c0"
-        id="welcome"
+        id="About"
       >
-        <div
+        <img
           class="c1"
+          src="/illustrations/blogging.svg"
         />
         <aside
           class="c2"
@@ -323,30 +285,9 @@ Object {
   gap: 55px;
 }
 
-.c0::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
 .c1 {
-  height: 100%;
-  width: 100%;
-  min-width: 50%;
-  max-height: 55%;
-  max-width: 90%;
-  padding: 20px 20px 0;
-  margin: 0 auto;
-  background-image: url(/img/BGprofile.jpg),url(/img/BG.svg);
-  background-origin: content-box,border-box;
-  background-position: top,top left;
-  background-size: cover,100px;
-  background-repeat: no-repeat,no-repeat;
-  -webkit-clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
-  clip-path: polygon(0% 0%,100% 0%,100% 95%,0% 100%);
+  width: clamp(300px,50%,800px);
+  padding-top: 6rem;
 }
 
 .c2 {
@@ -402,9 +343,9 @@ Object {
 
 @media (min-width:900px) {
   .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
     -webkit-align-items: flex-start;
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -425,24 +366,6 @@ Object {
 @media (min-width:900px) {
   .c0 {
     padding: 0 150px;
-  }
-}
-
-@media (min-width:500px) {
-  .c1 {
-    background-size: cover,120px;
-    max-height: 60%;
-    max-width: 70%;
-    padding: 40px 40px 0;
-  }
-}
-
-@media (min-width:900px) {
-  .c1 {
-    background-size: cover,140px;
-    max-height: 100%;
-    max-width: 45%;
-    min-width: 40%;
   }
 }
 
@@ -479,10 +402,11 @@ Object {
 <div>
     <main
       class="c0"
-      id="welcome"
+      id="About"
     >
-      <div
+      <img
         class="c1"
+        src="/illustrations/blogging.svg"
       />
       <aside
         class="c2"
