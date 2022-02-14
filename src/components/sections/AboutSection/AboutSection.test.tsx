@@ -5,11 +5,7 @@ import { AboutSection } from './AboutSection.index'
 
 describe('<AboutSection />', () => {
    it('should render the heading', () => {
-      const container = render(
-         <ThemeProvider theme={colorTheme}>
-            <AboutSection />
-         </ThemeProvider>
-      )
+      const container = render(<AboutSection />)
 
       expect(container).toMatchSnapshot()
    })
