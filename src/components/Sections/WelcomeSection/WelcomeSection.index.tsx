@@ -2,6 +2,7 @@
 import Hamburger from 'components/Hamburger/Hamburger.index'
 import IconLink from 'components/IconLink/IconLink.index'
 import ProfileImage from 'components/ProfileImage/ProfileImage.index'
+import ScrollDown from 'components/ScrollDown/ScrollDown.index'
 import Typography from 'components/Typography/Typography.index'
 import { useCycle } from 'framer-motion'
 import {
@@ -63,6 +64,7 @@ const WelcomeSection = () => {
                />
             </picture>
          </S.Waves>
+         <ScrollDown />
       </>
    )
 }

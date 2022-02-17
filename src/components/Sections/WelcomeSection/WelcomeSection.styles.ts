@@ -51,7 +51,7 @@ export const Container = styled(motion.section)`
 `
 
 export const Waves = styled.div`
-   height: clamp(100px, 30vh, 300px);
+   height: clamp(100px, 23vh, 300px);
    img {
       object-fit: cover;
       width: 100%;

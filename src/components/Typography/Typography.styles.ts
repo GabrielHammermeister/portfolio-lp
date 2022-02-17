@@ -55,7 +55,7 @@ export const Chip = styled.span<Props>`
 export const Label = styled.span<Props>`
    font-size: 12px;
    color: ${(props) => props.textColor};
-   font-weight: 400;
+   font-weight: 500;
 `
 
 export const Link = styled.a<Props>`
