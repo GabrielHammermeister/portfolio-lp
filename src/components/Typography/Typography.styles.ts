@@ -42,7 +42,7 @@ export const TextButton = styled.span<Props>`
 export const LabelButton = styled.span<Props>`
    font-size: 1rem;
    color: ${(props) => props.textColor};
-   font-weight: 400;
+   font-weight: 700;
    line-height: 130%;
 `
 
